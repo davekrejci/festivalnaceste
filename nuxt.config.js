@@ -8,6 +8,9 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         '@nuxt/content'
     ],
+    image: {
+        provider: 'ipx',
+    },
     plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     app: {
         head: {
