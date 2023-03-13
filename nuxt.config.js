@@ -1,16 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     components: true,
-    target: 'static',
     modules: [
         '@nuxtjs/tailwindcss',
         'nuxt-icon',
         '@nuxt/image-edge',
         '@nuxt/content'
     ],
-    image: {
-        provider: 'ipx',
-    },
     plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     app: {
         head: {
