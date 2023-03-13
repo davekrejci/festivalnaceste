@@ -9,6 +9,7 @@
         <nuxt-img
           :src="image"
           format="webp"
+          provider="static"
           fit="cover"
           height="300px"
           width="300px"

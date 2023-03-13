@@ -2,6 +2,7 @@
     <nuxt-img
           :src="src"
           format="webp"
+          provider="static"
           fit="cover"
           :alt="alt"
           loading="lazy"

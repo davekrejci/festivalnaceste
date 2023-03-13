@@ -13,7 +13,7 @@
                 </svg>
             </div>
             <div class="lightbox-image relative" @click.stop="">
-                <nuxt-img :src="images[index]" />
+                <nuxt-img provider="static" :src="images[index]" />
             </div>
             <div class="portrait:absolute portrait:-right-7 portrait:top-2/4 portrait:z-50 cursor-pointer self-center px-8"
                 @click.stop="next" :class="{ 'invisible': !hasNext() }">
