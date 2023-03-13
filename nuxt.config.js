@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         '@nuxt/content'
     ],
+    plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     app: {
         head: {
             title: 'Festival Na Cestě',
