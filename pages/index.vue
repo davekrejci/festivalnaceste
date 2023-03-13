@@ -1,6 +1,6 @@
 
 <template>
-  <div class="h-[calc(100svh-128px)] w-full max-w-none m-0 bg-[url('@/assets/images/background.svg')] bg-cover bg-center bg-bottom bg-no-repeat container">
+  <div class="h-full w-full max-w-none m-0 bg-[url('@/assets/images/background.svg')] bg-cover bg-center bg-bottom bg-no-repeat container">
     <div class="leaves">
       <div class="leaf1"><img src="@/assets/images/leaf.svg" alt="" srcset=""></div>
       <div class="leaf2"><img src="@/assets/images/leaf.svg" alt="" srcset=""></div>
@@ -15,15 +15,15 @@
     </div>
     <div class="w-full h-full max-w-none flex justify-center items-center backdrop-brightness-50">
       <div class="text-center text-amber-100">
-        <div class="bg-base-100 bg-opacity-0 backdrop-blur-sm rounded-sm">
-          <h1 class="font-bold text-6xl lg:text-6xl w-1/2 text-left">
+        <div class="">
+          <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl w-1/2 text-left">
             Festival<br>
             Na<br>
             Cestě
           </h1>
           <hr class="mt-4 mb-4 lg:mb-8 border-2 border-amber-100">
-          <p class="text-3xl font-bold tracking-tighter">31. 10 - 2. 11. 2023</p>
-          <p class="text-3xl font-bold">Opava</p>
+          <p class="text-2xl font-bold tracking-tighter">31. 10 - 2. 11. 2023</p>
+          <p class="text-2xl font-bold">Opava</p>
 
           <!-- some call to action here? -->
           <!-- <div class="flex justify-center gap-1 my-4">
