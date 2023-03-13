@@ -5,13 +5,13 @@
 </div>
   <section class="xl:pt-4">
     <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 max-w-screen-xl mx-auto">
-      <div v-for="(image, index) in images" :key="index" class="relative overflow-hidden" @click.prevent="openLightbox(index)">
+      <div v-for="(image, index) in images" :key="index" class="relative overflow-hidden aspect-square" @click.prevent="openLightbox(index)">
         <nuxt-img
           :src="image"
           format="webp"
           fit="cover"
-          height="300px"
-          width="300px"
+          height="300"
+          width="300"
           class="w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110"
           loading="lazy"
         />

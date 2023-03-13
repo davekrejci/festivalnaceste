@@ -1,10 +1,11 @@
 <template>
     <div class="lightbox fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center overflow-hidden"
         v-if="visible" @click="hide">
+        <Icon name="line-md:loading-loop" size="48" class="z-0 text-white absolute top-2/4 left-1/2 transform -translate-x-1/2"/>
         <div class="absolute top-0 right-0 pin-r pin-t text-white cursor-pointer text-4xl p-1 mr-2" @click.stop="hide">
             &times;</div>
         <div class="flex" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd">
-            <div class="portrait:absolute portrait:-left-7 portrait:top-2/4 portrait:z-50 cursor-pointer self-center px-8"
+            <div class="absolute -left-7 top-2/4 z-50 cursor-pointer self-center px-8"
                 @click.stop="prev" :class="{ 'invisible': !hasPrev() }">
                 <svg class="pointer-events-none" fill="#fff" height="48" viewBox="0 0 24 24" width="48"
                     xmlns="http://www.w3.org/2000/svg">
@@ -12,10 +13,10 @@
                     <path d="M0-.5h24v24H0z" fill="none" />
                 </svg>
             </div>
-            <div class="lightbox-image relative" @click.stop="">
-                <nuxt-img :src="images[index]" />
+            <div class="lightbox-image relative w-full h-full" @click.stop="">
+                <nuxt-img class="z-10 relative" :src="images[index]" />
             </div>
-            <div class="portrait:absolute portrait:-right-7 portrait:top-2/4 portrait:z-50 cursor-pointer self-center px-8"
+            <div class="absolute -right-7 top-2/4 z-50 cursor-pointer self-center px-8"
                 @click.stop="next" :class="{ 'invisible': !hasNext() }">
                 <svg class="pointer-events-none" fill="#fff" height="48" viewBox="0 0 24 24" width="48"
                     xmlns="http://www.w3.org/2000/svg">
