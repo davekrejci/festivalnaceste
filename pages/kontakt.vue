@@ -3,7 +3,8 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100svh-78px)]">
       <div class="p-8 lg:pl-16 flex justify-center items-center">
         <div>
-          <h1 class="mb-4 text-2xl text-neutral-200 font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Napište nám</h1>
+          <h1 class="mb-4 text-2xl text-neutral-200 font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Napište
+            nám</h1>
           <p class="text-neutral-300">Máte nějakou otázku na kterou jste nenašli odpověď?</p>
           <p class="mb-2 text-neutral-300">Chcete se zapojit do našeho multižánrového festivalu?</p>
           <p class="mb-8 text-neutral-300">Napište nám a rádi vám pomůžeme.</p>
@@ -23,15 +24,16 @@
           </div>
         </div>
       </div>
-      <!-- <div id="map" class="h-96 min-h-full"></div> -->
-      <div class="p-4 min-h-[400px] relative">
-        <div class="bg-gray-600 h-full relative">
-          <Icon name="line-md:loading-loop" size="48" class="z-0 absolute top-1/2 left-1/2 transform-x-1/2 -translate-y-1/2"/>
-          <iframe class="rounded-sm relative z-10"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8160.6244181941765!2d17.897039664431173!3d49.9368380225362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713d815cc57e8df%3A0x8855db84f16d7886!2zRmlsb3pvZmlja28tcMWZw61yb2RvdsSbZGVja8OhIGZha3VsdGEgdiBPcGF2xJsgU2xlenNrw6kgdW5pdmVyeml0eSB2IE9wYXbEmw!5e0!3m2!1scs!2scz!4v1678571162056!5m2!1scs!2scz"
-            width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+
+      <!-- MAP -->
+      <div class="p-4 mx-2 min-h-[400px] relative">
+        <!-- Skeleton loader -->
+        <div class="absolute inset-0 bg-[#e8eaed] shimmer rounded-sm"></div>
+        <!-- Map iframe -->
+        <iframe class="rounded-sm absolute inset-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8160.6244181941765!2d17.897039664431173!3d49.9368380225362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713d815cc57e8df%3A0x8855db84f16d7886!2zRmlsb3pvZmlja28tcMWZw61yb2RvdsSbZGVja8OhIGZha3VsdGEgdiBPcGF2xJsgU2xlenNrw6kgdW5pdmVyeml0eSB2IE9wYXbEmw!5e0!3m2!1scs!2scz!4v1678571162056!5m2!1scs!2scz"
+          width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
     <!-- <hr class="mt-16"> -->
@@ -39,7 +41,8 @@
       <h1 class="mb-4 text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Náš tým</h1>
       <p class="mb-4">
         Jsme skupina vášnivých umělců, organizátorů a studentů. Snažíme se
-        propojit umělce a diváky, abychom vytvořili nezapomenutelný zážitek pro každého návštěvníka. Pokud máte jakékoliv dotazy ohledně festivalu nebo byste chtěli vědět více o našem
+        propojit umělce a diváky, abychom vytvořili nezapomenutelný zážitek pro každého návštěvníka. Pokud máte
+        jakékoliv dotazy ohledně festivalu nebo byste chtěli vědět více o našem
         týmu, neváhejte nás kontaktovat. Jsme tu pro vás.
       </p>
       <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center mt-16">
@@ -60,7 +63,26 @@
   </div>
 </template>
 
-<style></style>
+<style>
+.shimmer {
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-size: 800px 100%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0; 
+  }
+}
+</style>
 
 <!-- <script setup lang="ts">
 useHead({
