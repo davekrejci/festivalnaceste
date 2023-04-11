@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100svh-78px)]">
-      <div class="p-8 lg:pl-16 flex justify-center items-center">
+  <div class="lg:w-3/5 mx-auto">
+    <div class="2xl:flex p-8 md:px-16">
+      <div class="p-8 w-full flex 2xl:justify-center 2xl:items-center">
         <div>
           <h1 class="mb-4 text-2xl text-neutral-200 font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Napište
             nám</h1>
@@ -26,7 +26,7 @@
       </div>
 
       <!-- MAP -->
-      <div class="p-4 mx-2 min-h-[400px] relative">
+      <div class="p-4 mx-2 min-h-[400px] w-full max-w-[600px] mx-auto relative">
         <!-- Skeleton loader -->
         <div class="absolute inset-0 bg-[#e8eaed] shimmer rounded-sm"></div>
         <!-- Map iframe -->
@@ -45,15 +45,15 @@
         jakékoliv dotazy ohledně festivalu nebo byste chtěli vědět více o našem
         týmu, neváhejte nás kontaktovat. Jsme tu pro vás.
       </p>
-      <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center mt-16">
-        <div v-for="member in teamMembers" :key="member.name" class="">
+      <section class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-16 text-center mt-16">
+        <div v-for="member in teamMembers" :key="member.name" class="flex flex-col items-center">
           <div className="avatar">
             <div className="w-24 rounded-full">
-              <img src="https://xsgames.co/randomusers/avatar.php?g=female" />
+              <img class="rounded-full" :src="member.img" />
             </div>
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-bold mb-2">{{ member.name }}</h3>
+            <h3 class="text-lg font-bold mb-2 max-w-8">{{ member.name }}</h3>
             <p class="text-neutral-300">{{ member.role }}</p>
           </div>
         </div>
@@ -128,15 +128,15 @@ useHead({
 
 <script setup>
 const teamMembers = [
-  { name: 'Lucie Tománková', role: 'Koordinátorka / Dramaturg', img: '' },
-  { name: 'Jindra Fišer', role: 'Produkce / Dramaturg', img: '' },
-  { name: 'Tereza Winkelhöferová', role: 'Copywriting, Režie', img: '' },
-  { name: 'Olga Burešová', role: 'Prostorový Design, Režie', img: '' },
-  { name: 'Renáta Nedomová', role: 'Prostorový Design, Produkce', img: '' },
-  { name: 'Natálie Funková', role: 'Finance', img: '' },
-  { name: 'Barbora Havlenová', role: 'Sociální sítě', img: '' },
-  { name: 'Mgr. Pavla Bergmannová', role: 'Pedagogická supervize', img: '' },
-  { name: 'Mgr. Hasan Zahirović Ph.D.', role: 'Pedagogická supervize', img: '' },
+  { name: 'Lucie Tománková', role: 'Koordinátorka, Dramaturg', img: '/images/team/lucka.jpg' },
+  { name: 'Jindra Fišer', role: 'Produkce, Dramaturg', img: '/images/team/jindra.jpg' },
+  { name: 'Tereza Winkelhöferová', role: 'Copywriting, Režie', img: '/images/team/terka.jpg' },
+  { name: 'Olga Burešová', role: 'Prostorový Design, Režie', img: '/images/team/olca.jpg' },
+  { name: 'Renáta Nedomová', role: 'Prostorový Design, Produkce', img: '/images/team/renca.jpg' },
+  { name: 'Natálie Funková', role: 'Finance', img: '/images/team/natka.jpg' },
+  { name: 'Barbora Havlenová', role: 'Sociální sítě', img: '/images/team/barca.jpg' },
+  { name: 'Mgr. Pavla Bergmannová', role: 'Pedagogická supervize', img: '/images/team/pavla.png' },
+  { name: 'Mgr. Hasan Zahirović Ph.D.', role: 'Pedagogická supervize', img: '/images/team/hasan.png' },
 
 
 ]
