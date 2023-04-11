@@ -142,7 +142,7 @@ import {
 const menuItems = [
   { link: "/aktuality", text: "Aktuality" },
   { link: "/program", text: "Program" },
-  { link: "/galerie", text: "Galerie" },
+  { link: "/galerie/2022", text: "Galerie" },
   {
     link: "#", text: "Info", children:
       [
