@@ -1,5 +1,5 @@
 <template>
-    <div class="h-60 bg-[url('@/images/gallery_bg.jpg')] grayscale bg-cover bg-center bg-bottom bg-no-repeat flex justify-center items-center max-w-screen-xl mx-auto mx-2">
+    <div class="h-60 bg-[url('/images/gallery_bg.jpg')] grayscale bg-cover bg-center bg-bottom bg-no-repeat flex justify-center items-center max-w-screen-xl mx-auto mx-2">
         <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
             <h1 class="font-bold text-white text-4xl w-1/2 text-center">Galerie</h1>
         </div>
