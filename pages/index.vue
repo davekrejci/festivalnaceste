@@ -22,7 +22,7 @@
             Cestě
           </h1>
           <hr class="mt-4 mb-4 lg:mb-8 border-2 border-amber-100">
-          <p class="text-2xl font-bold tracking-tighter">31. 10 - 2. 11. 2023</p>
+          <p class="text-2xl font-bold tracking-tighter">31. 10. – 2. 11. 2023</p>
           <p class="text-2xl font-bold">Opava</p>
 
           <!-- some call to action here? -->
