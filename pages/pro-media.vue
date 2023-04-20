@@ -51,7 +51,7 @@
           </div>
           <span class="text-neutral-300 mb-6">Zazipovaná složka s několika formáty našeho loga</span>
           <div>
-            <a href="#" class="bg-orange-600 text-white p-2 px-4 rounded-md">Stáhnout soubor</a>
+            <a href="/downloads/logo_pack.zip" class="bg-orange-600 text-white p-2 px-4 rounded-md">Stáhnout soubor</a>
           </div>
         </div>
       </div>
