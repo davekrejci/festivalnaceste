@@ -54,7 +54,7 @@
           </div>
           <div class="p-4">
             <h3 class="text-lg font-bold mb-2 max-w-8">{{ member.name }}</h3>
-            <p class="text-neutral-300">{{ member.role }}</p>
+            <p class="text-neutral-400">{{ member.role }}</p>
           </div>
         </div>
       </section>
@@ -128,15 +128,15 @@ useHead({
 
 <script setup>
 const teamMembers = [
-  { name: 'Lucie Tománková', role: 'Koordinátorka, Dramaturg', img: '/images/team/lucka.jpg' },
-  { name: 'Jindra Fišer', role: 'Produkce, Dramaturg', img: '/images/team/jindra.jpg' },
-  { name: 'Tereza Winkelhöferová', role: 'Copywriting, Režie', img: '/images/team/terka.jpg' },
-  { name: 'Olga Burešová', role: 'Prostorový Design, Režie', img: '/images/team/olca.jpg' },
-  { name: 'Renáta Nedomová', role: 'Prostorový Design, Produkce', img: '/images/team/renca.jpg' },
-  { name: 'Natálie Funková', role: 'Finance', img: '/images/team/natka.jpg' },
-  { name: 'Barbora Havlenová', role: 'Sociální sítě', img: '/images/team/barca.jpg' },
-  { name: 'Mgr. Pavla Bergmannová', role: 'Pedagogická supervize', img: '/images/team/pavla.png' },
-  { name: 'Mgr. Hasan Zahirović Ph.D.', role: 'Pedagogická supervize', img: '/images/team/hasan.png' },
+  { name: 'Lucie Tománková', role: 'koordinátorka, dramaturg', img: '/images/team/lucka.jpg' },
+  { name: 'Jindra Fišer', role: 'produkce, dramaturg', img: '/images/team/jindra.jpg' },
+  { name: 'Tereza Winkelhöferová', role: 'copywriting, režie', img: '/images/team/terka.jpg' },
+  { name: 'Olga Burešová', role: 'prostorový design, režie', img: '/images/team/olca.jpg' },
+  { name: 'Renáta Nedomová', role: 'prostorový design, Produkce', img: '/images/team/renca.jpg' },
+  { name: 'Natálie Funková', role: 'finance', img: '/images/team/natka.jpg' },
+  { name: 'Barbora Havlenová', role: 'sociální sítě', img: '/images/team/barca.jpg' },
+  { name: 'Mgr. Pavla Bergmannová', role: 'pedagogická supervize', img: '/images/team/pavla.png' },
+  { name: 'Mgr. Hasan Zahirović Ph.D.', role: 'pedagogická supervize', img: '/images/team/hasan.png' },
 
 
 ]
