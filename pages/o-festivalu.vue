@@ -2,7 +2,7 @@
     <section>
     <article class="p-8 lg:w-3/5 mx-auto">
         <h2 class="mb-4 text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">O festivalu</h2>
-        <p class="mb-4 text-neutral-300">Festival Na cestě je multižánrový festival, který vznikl jako dobrovolná aktivita z iniciativy studentů oboru Kulturní dramaturgie Filozoficko-přírodovědecké fakulty Slezské univerzity Opava. Ti jsou také hlavními organizátory projektu, jehož realizace je ověřením jejich teoretických studijních poznatků v praxi.</p>
+        <p class="mb-4 text-neutral-300">Festival Na cestě je multižánrový festival, který vznikl jako dobrovolná aktivita z iniciativy studentů oboru Kulturní dramaturgie se zaměřením na divadlo na Filozoficko-přírodovědecké fakultě Slezské univerzity Opava. Ti jsou také hlavními organizátory projektu, jehož realizace je ověřením jejich teoretických studijních poznatků v praxi.</p>
         <p class="mb-4 text-neutral-300">Tato akce je plná rozmanitosti a nabízí divákům široké spektrum uměleckých projevů, jako jsou divadelní představení, koncerty a workshopy. Bez ohledu na to, zda jste zkušený divák nebo nováček v oblasti umění, Festival Na cestě je skvělou příležitostí, abyste se nechali unést uměleckými zážitky a prožili nezapomenutelnou kulturní událost. </p>
         <h2 class="mb-4 mt-8 text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Historie</h2>
         <p class="mb-4 text-neutral-300">Festival Na cestě je pořádán již od roku 2007. Festival se již od svého počátku profiluje jako multižánrová akce zahrnující různorodé spektrum uměleckých a tvůrčích činností. Od roku 2009 se navíc každoročně zaměřuje na jiné téma.</p>
