@@ -7,7 +7,6 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         '@nuxt/content'
     ],
-    plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     app: {
         head: {
             title: 'Festival Na Cestě',
@@ -17,6 +16,13 @@ export default defineNuxtConfig({
             link: [
                 { rel: 'stylesheet', href: 'https://fonts.googelapis.com/icon?family=Material+Icons' },
                 { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap' }
+            ],
+            script: [
+                {
+                    src: "https://analytics.umami.is/script.js",
+                    async: true,
+                    "data-website-id": '620d400e-bcaf-4cd2-a854-ff65c3f8c3fe',
+                },
             ]
         }
     }
