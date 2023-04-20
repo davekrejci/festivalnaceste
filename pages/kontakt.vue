@@ -132,7 +132,7 @@ const teamMembers = [
   { name: 'Jindra Fišer', role: 'produkce, dramaturg', img: '/images/team/jindra.jpg' },
   { name: 'Tereza Winkelhöferová', role: 'copywriting, režie', img: '/images/team/terka.jpg' },
   { name: 'Olga Burešová', role: 'prostorový design, režie', img: '/images/team/olca.jpg' },
-  { name: 'Renáta Nedomová', role: 'prostorový design, Produkce', img: '/images/team/renca.jpg' },
+  { name: 'Renáta Nedomová', role: 'prostorový design, produkce', img: '/images/team/renca.jpg' },
   { name: 'Natálie Funková', role: 'finance', img: '/images/team/natka.jpg' },
   { name: 'Barbora Havlenová', role: 'sociální sítě', img: '/images/team/barca.jpg' },
   { name: 'Mgr. Pavla Bergmannová', role: 'pedagogická supervize', img: '/images/team/pavla.png' },
