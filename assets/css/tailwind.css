@@ -6,3 +6,7 @@ body {
     /* color: #f4efd3; */
     color: white;
 }
+
+.btn{
+    text-transform: none;
+}
