@@ -26,7 +26,7 @@
           </h1> -->
           <div class="h-64 w-64 lg:h-96 lg:w-96 max-w-none bg-[url('@/assets/images/logo.svg')] bg-cover bg-center bg-no-repeat"></div>
           <!-- <img class="h-96 w-auto" src="@/assets//images/logo.svg" alt="" /> -->
-          <hr class="mb-4 -mt-16 lg:mb-8 border-2 border-amber-100">
+          <hr class="mb-4 -mt-10 lg:-mt-16 lg:mb-8 border-2 border-amber-100">
           <p class="text-2xl font-bold tracking-tighter">31. 10. – 2. 11. 2023</p>
           <p class="text-2xl font-bold">Opava</p>
         </div>
