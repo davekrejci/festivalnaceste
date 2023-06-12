@@ -5,6 +5,11 @@
 body {
     /* color: #f4efd3; */
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Source Serif Pro', serif;
 }
 
 .btn{

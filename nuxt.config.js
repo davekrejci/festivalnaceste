@@ -14,8 +14,10 @@ export default defineNuxtConfig({
                 { name: 'description', content: 'Oficiální web multižánrového festivalu Na Cestě.' }
             ],
             link: [
-                { rel: 'stylesheet', href: 'https://fonts.googelapis.com/icon?family=Material+Icons' },
-                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap' }
+                { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+                { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
+                { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap' },
+                { rel: 'stylesheet', media: 'print', onload: "this.media='all'", href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap' }
             ],
             script: [
                 {
