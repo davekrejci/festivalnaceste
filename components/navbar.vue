@@ -5,7 +5,7 @@
     <nav class="nav flex items-center justify-between px-4 py-2 lg:px-4" aria-label="Global">
       <div class="flex lg:flex-1">
         <NuxtLink to="/">
-          <img class="h-16 w-auto" src="@/assets//images/logo.svg" alt="" />
+          <nuxt-img height="64" width="64" src="/images/logo.svg" alt="logo-image" />
         </NuxtLink>
       </div>
       <div class="flex md:hidden">
@@ -14,12 +14,12 @@
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <PopoverGroup class="hidden md:flex md:gap-x-6 font-semibold text-sm leading-6 mr-2">
+      <PopoverGroup class="hidden md:flex md:gap-x-6 font-semibold text-md leading-6 mr-2">
         <div v-for="item in menuItems" :key="item.link">
           <div v-if="item.children">
             <div class="dropdown dropdown-end">
               <label tabindex="0"
-                class="-mx-5 py-2 px-6 flex cursor-pointer items-center gap-x-1 text-sm font-semibold leading-7 hover:text-orange-400">
+                class="-mx-5 py-2 px-6 flex cursor-pointer items-center gap-x-1 text-md font-semibold leading-7 hover:text-orange-400">
                 {{ item.text }}
                 <Icon size="16" name="ph:caret-down-bold" />
               </label>
@@ -61,7 +61,7 @@
       <DialogPanel class="bg-base-300 fixed flex flex-col inset-y-0 right-0 z-10 w-full overflow-y-auto px-4 py-2">
         <div class="flex items-center justify-between">
           <NuxtLink to="/" @click="mobileMenuOpen = false">
-            <img class="h-16 w-auto" src="@/assets//images/logo.svg" alt="" />
+            <nuxt-img height="64" width="64" src="/images/logo.svg" alt="logo-image" />
           </NuxtLink>
           <button type="button" class="-m-2.5 rounded-md p-2.5" @click="mobileMenuOpen = false">
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
@@ -117,7 +117,8 @@
 }
 
 .nav {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 </style>
   

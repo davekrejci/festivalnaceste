@@ -5,7 +5,14 @@
             <section>
                 <article v-for="post of posts" :key="post.slug" class="border-2 border-neutral-500 rounded-md mb-4">
                     <div class="md:flex md:h-56">
-                        <img class="object-cover w-full h-56 rounded-t-md md:rounded-l-md md:rounded-r-none md:w-64" :src="post.img" alt="">
+                        <nuxt-img
+                            :src="post.img"
+                            format="webp"
+                            fit="cover"
+                            alt="cover-image"
+                            loading="lazy"
+                            class="object-cover w-full h-56 rounded-t-md md:rounded-l-md md:rounded-r-none md:w-64"
+                        />
                         <div class="flex flex-col pt-4 md:mx-6 px-6 pb-6 py-16">
                             <div class="mb-2 text-sm text-neutral-400">{{ formatDate(post.date) }}</div>
                             <div>
