@@ -135,8 +135,10 @@ const teamMembers = [
   { name: 'Renáta Nedomová', role: 'prostorový design, produkce', img: '/images/team/renca.jpg' },
   { name: 'Natálie Funková', role: 'finance', img: '/images/team/natka.jpg' },
   { name: 'Barbora Havlenová', role: 'sociální sítě', img: '/images/team/barca.jpg' },
+  { name: 'Marie Klára Vonzino', role: 'asistent koordinátorky', img: '/images/team/marie.jpg' },
   { name: 'Mgr. Pavla Bergmannová', role: 'pedagogická supervize', img: '/images/team/pavla.png' },
   { name: 'Mgr. Hasan Zahirović Ph.D.', role: 'pedagogická supervize', img: '/images/team/hasan.png' },
+  
 
 
 ]
