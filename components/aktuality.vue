@@ -1,7 +1,7 @@
 <template>
     <div class="p-8 max-w-5xl flex justify-center mx-auto">
         <div>
-            <h1 class="text-2xl font-semibold mb-6">Aktuality</h1>
+            <h1 class="text-2xl font-bold mb-12 leading-7 sm:truncate sm:text-3xl sm:tracking-tight text-center">Aktuality</h1>
             <section>
                 <article v-for="post of posts" :key="post.slug" class="border-2 border-neutral-500 rounded-md mb-4">
                     <div class="md:flex md:h-56">
