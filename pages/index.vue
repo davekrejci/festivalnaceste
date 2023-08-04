@@ -1,6 +1,6 @@
 
 <template>
-  <div class="relative h-[calc(100vh-80px)] isolate">
+  <div class="relative h-[calc(100vh-80px)] isolate px-6 pt-14 lg:px-8 overflow-hidden">
     <div
       class="absolute left-0 bottom-0 h-full w-full max-w-none m-0 bg-[url('@/assets/images/background.svg')] bg-cover bg-bottom bg-no-repeat">
     </div>
@@ -26,11 +26,8 @@
         </div>
       </div>
     </div>
-    <div class="jumpingButtonWrapper">
-      <JumpingButton to="aktuality"></JumpingButton>
-    </div>
   </div>
-  <section id="aktuality" class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
+  <section class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
     <Aktuality :count='3'></Aktuality>
     <div class="btn btn-outline btn-md text-white hover:bg-transparent hover:text-orange-500 mt-4">
       <a href="/aktuality">Zobrazit všechny aktuality</a>
@@ -41,13 +38,6 @@
 <style scoped>
 body {
   overflow: hidden;
-}
-
-.jumpingButtonWrapper{
-  bottom: 0;
-  height: 20px;
-  position: absolute;
-  width: 100%;
 }
 
 .leaves img {
