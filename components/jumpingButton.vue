@@ -1,6 +1,6 @@
 <template>
-    <a @click="scrollToSection" class="jumpingButton bg-orange-600 border-orange-400 border-4 rounded-full text-center">
-        <Icon name="formkit:caretdown" class="text-neutral-200 mb-2 font-bold" size="16"></Icon>
+    <a @click="scrollToSection" class="jumpingButton bg-orange-600 border-orange-400 border-2 rounded-full text-center">
+        <Icon name="formkit:caretdown" class="text-neutral-200 font-bold mb-1" size="16"></Icon>
     </a>
 </template>
 
@@ -27,6 +27,7 @@ function scrollToSection() {
     display: block;
     height: 28px;
     margin: 0 auto;
+    transform: translateX(-50%);
     position: relative;
     top: 0;
     width: 28px;

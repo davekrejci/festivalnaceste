@@ -18,7 +18,7 @@
     </div>
     <div class="absolute left-0 top-0 w-full h-full max-w-none flex justify-center items-center backdrop-brightness-50">
       <div class="text-center text-amber-100">
-        <div class="">
+        <div class="-mt-20">
           <div class="h-64 w-64 lg:h-96 lg:w-96 max-w-none bg-[url('@/assets/images/logo.svg')] bg-cover bg-center bg-no-repeat"></div>
           <hr class="mb-4 -mt-10 lg:-mt-16 lg:mb-8 border-2 border-amber-100">
           <h2 class="text-2xl font-bold tracking-tighter">31. 10. – 2. 11. 2023</h2>
@@ -26,8 +26,11 @@
         </div>
       </div>
     </div>
+    <div class="jumpingButtonWrapper hidden lg:block">
+      <JumpingButton to="aktuality"></JumpingButton>
+    </div>
   </div>
-  <section class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
+  <section id="aktuality" class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
     <Aktuality :count='3'></Aktuality>
     <div class="btn btn-outline btn-md text-white hover:bg-transparent hover:text-orange-500 mt-4">
       <a href="/aktuality">Zobrazit všechny aktuality</a>
@@ -38,6 +41,13 @@
 <style scoped>
 body {
   overflow: hidden;
+}
+
+.jumpingButtonWrapper{
+  bottom: 0;
+  height: 50px;
+  position: absolute;
+  width: 100%;
 }
 
 .leaves img {
