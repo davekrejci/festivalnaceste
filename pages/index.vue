@@ -36,6 +36,9 @@
       <a href="/aktuality">Zobrazit všechny aktuality</a>
     </div>
   </section>
+  <section class="bg-[#eab475] p-16 pb-28">
+    <Sponzori></Sponzori>
+  </section>
 </template>
 
 <style scoped>
