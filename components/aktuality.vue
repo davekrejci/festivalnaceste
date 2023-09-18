@@ -11,7 +11,7 @@
                             fit="cover"
                             alt="cover-image"
                             loading="lazy"
-                            class="object-cover w-full h-56 rounded-t-md md:rounded-l-md md:rounded-r-none md:w-64"
+                            class="object-cover w-full h-56 rounded-t-md md:rounded-l-md md:rounded-r-none md:w-64 md:min-w-[256px]"
                         />
                         <div class="flex flex-col pt-4 md:mx-6 px-6 pb-6 py-16">
                             <div class="mb-2 text-sm text-neutral-400">{{ formatDate(post.date) }}</div>
@@ -50,16 +50,10 @@ const props = defineProps({
 let numberOfPosts = props.count;
 let posts = [];
 if (numberOfPosts) {
-    posts = await queryContent('/').only(['slug', 'title', 'description', 'img', 'date']).limit(numberOfPosts).find();
+    posts = await queryContent('/aktuality').only(['slug', 'title', 'description', 'img', 'date']).sort({ date: -1 }).limit(numberOfPosts).find();
 } else {
-    posts = await queryContent('/').only(['slug', 'title', 'description', 'img', 'date']).find();
+    posts = await queryContent('/aktuality').only(['slug', 'title', 'description', 'img', 'date']).sort({ date: -1 }).find();
 }
-
-function customSort(a, b) {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-}
-posts.sort(customSort);
-
 
 function formatDate(date) {
     const options = { day: 'numeric', month: 'long', year: 'numeric' }
