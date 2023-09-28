@@ -1,0 +1,106 @@
+<template>
+    <div v-if="data">
+        <!-- Intro section -->
+        <section class="relative mx-auto h-96 bg-cover bg-no-repeat cover"
+            :style="{ backgroundImage: 'url(' + data.cover + ')' }">
+            <div class="absolute inset-0 bg-gradient-to-tr from-neutral-900 via-transparent"></div>
+            <div class="backdrop-brightness-50 text-center w-full h-full m-0 p-8 flex items-end justify-start">
+                <div @click="this.$router.go(-1)"
+                    class="absolute top-5 left-5 btn btn-outline btn-sm text-white hover:bg-transparent hover:text-orange-500">
+                    <Icon size="16" name="ph:caret-left"></Icon>
+                    <span>Zpět</span>
+            </div>
+                <div>
+                    <div class="flex flex-col items-start text-left">
+                        <p class="text-white font-semibold uppercase mb-1">{{ data.type }}</p>
+                        <h2 class="text-white text-4xl font-bold text-2xl">{{ data.title }}</h2>
+                        <p class="text-neutral-300 pt-2 lg:w-3/4">{{ data.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Description section -->
+        <section class="p-8 py-8 lg:w-3/4 lg:py-16 mx-auto">
+            <div class="mb-8 p-4 bg-base-300">
+                <span class="m-0 p-0 mb-0 text-white text-lg font-bold block">{{ data.date }}</span>
+                <span class="m-0 p-0 mb-0 text-white block">{{ data.time }}</span>
+                <span class="m-0 p-0 pt-2 text-white font-semibold block">{{ data.location }}</span>
+            </div>
+            <div v-html="data.info"></div>
+            <div v-if="data.links" class="w-32 mt-16">
+                <div class="grid grid-flow-col gap-4">
+                    <div v-for="(link, index) in data.links" :key="index" class="hover:text-orange-400 p-1 m-0 rounded-lg">
+                        <a :href="link.url" target="_blank">
+                            <Icon size="24" :name="link.icon"></Icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Media section -->
+        <section class="pt-8 lg:w-3/4 lg:py-16 mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-screen-xl mx-auto">
+                <div v-for="(image, index) in data.images" :key="index" class="relative overflow-hidden aspect-square"
+                    @click.prevent="openLightbox(index)">
+                    <nuxt-img :src="image" format="webp" fit="cover" height="300" width="300"
+                        class="w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110"
+                        loading="lazy" />
+                </div>
+                <div v-for="(video, index) in data.videos" :key="index" class="relative overflow-hidden aspect-square"
+                    @click.prevent="openLightbox(index)">
+                    <iframe height="100%" width="100%" :src="video.src" :title="video.title" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div v-else>
+        <NotFound></NotFound>
+    </div>
+    <lightbox :images="data.images" :visible="lightboxVisible" :index="lightboxIndex" @closeLightbox="closeLightbox"
+        @indexIncrement="lightboxIndex++" @indexDecrement="lightboxIndex--">
+    </lightbox>
+</template>
+
+<style scoped>
+p {
+    margin-bottom: 1rem;
+}
+
+.cover {
+    background-position: 0 40% !important;
+}
+</style>
+  
+<script setup>
+import { ref } from 'vue'
+let lightboxIndex = ref(0);
+let lightboxVisible = ref(false);
+
+let data = null;
+try {
+    const route = useRoute();
+    const slug = route.params.slugs[0];
+    console.log(slug);
+    data = await queryContent('/ucinkujici').where({ slug: slug }).findOne();
+    console.log(data);
+}
+catch (error) {
+    console.log(error);
+}
+
+function openLightbox(index) {
+    console.log('open lightbox called!');
+    lightboxIndex.value = index;
+    console.log(lightboxIndex);
+    lightboxVisible.value = true;
+    console.log(lightboxVisible);
+}
+function closeLightbox() {
+    lightboxIndex.value = 0;
+    lightboxVisible.value = false;
+}
+</script>
+
+  
