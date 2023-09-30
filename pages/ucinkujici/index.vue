@@ -83,13 +83,13 @@
                     <p class="text-white">Some text here...</p>
                 </div>
             </div>
-            <NuxtLink to="/ucinkujici/teller" class="tile overflow-hidden relative h-60 lg:col-start-3 lg:col-span-1 lg:row-start-5 lg:row-span-2 border-2 border-black bg-indigo-400">
+            <NuxtLink to="/ucinkujici/teller-workshop" class="tile overflow-hidden relative h-60 lg:col-start-3 lg:col-span-1 lg:row-start-5 lg:row-span-2 border-2 border-black bg-indigo-400">
                 <nuxt-img src="/images/artists/teller2.jpg" format="webp" fit="cover" class="tile overflow-hidden-bg-image absolute left-0 top-0 w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110 hover:brightness-50"
                     loading="lazy"/>
                 <div class="absolute left-0 bottom-0 p-4 z-10 pointer-events-none">
                     <p class="text-white text-xs font-semibold uppercase mb-1">Workshop</p>
                     <h2 class="text-white font-bold text-2xl">Filip Teller</h2>
-                    <p class="text-white">Some text here...</p>
+                    <p class="text-white">Kurz zaměřený na mezilidskou nonverbální komunikaci.</p>
                 </div>
             </NuxtLink>
             <div class="tile overflow-hidden relative h-60 lg:col-start-4 lg:col-span-1 lg:row-start-5 lg:row-span-2 border-2 border-black bg-cyan-400">

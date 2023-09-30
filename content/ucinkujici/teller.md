@@ -7,12 +7,21 @@ date: 'Čtvrtek 1. 11. 2023'
 time: '17:00 - 18:00'
 cover: '/images/artists/teller.jpg'
 info: '
-<h2>Filip Teller v představení <i>Možná, že to znáte...</i></h2>
+<h2>Filip Teller v představení <b>Možná, že to znáte...</b></h2>
 <br>
 <p>Hudební stand up comedy show o záležitostech všedních dní.</p>
 <br>
 <p>Každý z nás si někdy vyčítá, že opět snědl na posezení tabulku čokolády, opět nešel cvičit, nebo opět adoptoval útulkového psa. </p><br>
 <p>Někteří z nás bojují s vlastním sebevědomím, s podivnými sousedy nebo s premenstruačním syndromem své ženy... Všichni tak trochu řešíme to stejné a nakonec nás nejvíc formuje a mění láska a smrt.</p>
+<br>
+<p>
+<ul>
+<li>Scénář a text písní: Filip Teller</li>
+<li>Autor hudby: Zdeněk Král</li>
+<li>Na kytaru doprovází: Aleš Vosáhlo</li>
+<li>Režijní supervize: Michal Skočovský</li>
+</ul>
+</p>
 '
 links: [
     {
