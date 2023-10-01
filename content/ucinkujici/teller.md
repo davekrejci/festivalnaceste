@@ -2,9 +2,9 @@
 title: 'Filip Teller'
 type: 'Stand up'
 description: 'Seriózně komediální herec v roli stand up komika, který svá autorská představení využívá jako platformu pro sdělování aktuálních témat.'
-location: 'Hauerova 4, ateliér'
-date: 'Čtvrtek 1. 11. 2023'
-time: '17:00 - 18:00'
+location: 'Hauerova 4'
+date: 'Středa 1. 11. 2023'
+time: '18:50 - 20:00'
 cover: '/images/artists/teller.jpg'
 info: '
 <h2>Filip Teller v představení <b>Možná, že to znáte...</b></h2>
@@ -26,19 +26,23 @@ info: '
 links: [
     {
         url: 'https://www.facebook.com/TellerFilip/',
-        icon: 'fa6-brands:facebook-f'
+        icon: 'fa6-brands:facebook-f',
+        text: 'Facebook'
     },
     {
         url: 'https://www.youtube.com/@filipteller2058/videos',
-        icon: 'fa-brands:youtube'
+        icon: 'fa-brands:youtube',
+        text: 'Youtube'
     },
     {
         url: 'https://www.instagram.com/filipteller/?hl=cs/',
-        icon: 'fa6-brands:instagram'
+        icon: 'fa6-brands:instagram',
+        text: 'Instagram'
     },
     {
         url: 'https://filipteller.com/',
-        icon: 'mdi:web'
+        icon: 'mdi:web',
+        text: 'Web'
     }
 ]
 images: ['https://leitnerka.cz/wp/wp-content/uploads/2021/11/plakat-bez-dat.jpg','https://leitnerka.cz/wp/wp-content/uploads/2022/01/1-33-1920x1278.jpg','https://rosenfeldovpalac.sk/wp-content/uploads/2022/06/004_divadlo-mozna-ze-to-znate-filip-teller_Copyright-Marek-Jan%C4%8D%C3%BAch_July-16-2022_resize.jpg']

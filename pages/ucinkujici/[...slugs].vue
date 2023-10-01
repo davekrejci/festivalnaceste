@@ -1,7 +1,7 @@
 <template>
     <div v-if="data">
         <!-- Intro section -->
-        <section class="relative mx-auto h-96 bg-cover bg-no-repeat cover"
+        <section class="relative mx-auto xl:max-w-7xl xl:mt-8 h-96 bg-cover bg-no-repeat cover"
             :style="{ backgroundImage: 'url(' + data.cover + ')' }">
             <div class="absolute inset-0 bg-gradient-to-tr from-neutral-900 via-transparent"></div>
             <div class="backdrop-brightness-50 text-center w-full h-full m-0 p-8 flex items-end justify-start">
@@ -20,25 +20,26 @@
             </div>
         </section>
         <!-- Description section -->
-        <section class="p-8 py-8 lg:w-3/4 lg:py-16 mx-auto">
-            <div class="mb-8 p-4 bg-base-300">
+        <section class="p-8 py-8 bg-base-300 xl:max-w-7xl mx-auto">
+            <div class="mb-8 p-4 border border-neutral-400">
                 <span class="m-0 p-0 mb-0 text-white text-lg font-bold block">{{ data.date }}</span>
                 <span class="m-0 p-0 mb-0 text-white block">{{ data.time }}</span>
                 <span class="m-0 p-0 pt-2 text-white font-semibold block">{{ data.location }}</span>
             </div>
             <div v-html="data.info"></div>
-            <div v-if="data.links" class="w-32 mt-16">
-                <div class="grid grid-flow-col gap-4">
-                    <div v-for="(link, index) in data.links" :key="index" class="hover:text-orange-400 p-1 m-0 rounded-lg">
+            <div v-if="data.links" class="w-32 mt-8">
+                <ul>
+                    <li v-for="(link, index) in data.links" :key="index" class="hover:text-orange-400 p-1 m-0 rounded-lg">
                         <a :href="link.url" target="_blank">
                             <Icon size="24" :name="link.icon"></Icon>
+                            <span class="ml-2">{{link.text}}</span>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- Media section -->
-        <section class="pt-8 lg:w-3/4 lg:py-16 mx-auto">
+        <section class="xl:max-w-7xl xl:mb-8 mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-screen-xl mx-auto">
                 <div v-for="(image, index) in data.images" :key="index" class="relative overflow-hidden aspect-square"
                     @click.prevent="openLightbox(index)">
@@ -67,7 +68,6 @@
 p {
     margin-bottom: 1rem;
 }
-
 .cover {
     background-position: 0 40% !important;
 }

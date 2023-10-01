@@ -31,13 +31,13 @@
               </li>
             </ul>
           </div>
-          <div class="program relative grow w-full bg-[#341819]" :style="'height:'+day.hours.length*120+'px;'">
-            <NuxtLink v-for="(event, index) in day.events" :key="index" :to="event.link" class="absolute cursor-pointer w-4/5 p-4 rounded-lg left-10" :style="'top:'+event.startPosition+'px; height:'+event.duration*2+'px;'">
+          <div class="program relative grow w-full bg-[#341819]" :style="'height:'+day.hours.length*240+'px;'">
+            <NuxtLink v-for="(event, index) in day.events" :key="index" :to="event.link" class="absolute cursor-pointer w-4/5 p-4 rounded-lg left-10" :style="'top:'+event.startPosition+'px; height:'+event.duration*4+'px;'">
               <div class="absolute z-0 w-full h-full border border-neutral-500 top-0 left-0  bg-base-100  hover:bg-gradient-to-br hover:from-orange-500 hover:to-orange-400 opacity-75"></div>
               <div class="absolute z-10 pointer-events-none w-full h-full">
-                <p class="text-white text-xs font-semibold uppercase mb-1">Koncert</p>
+                <p class="text-white text-xs font-semibold uppercase mb-1">{{event.type}}</p>
                 <h2 class="text-white font-bold text-md">{{ event.name }}</h2>
-                <p class="text-white text-sm"><Icon size="16" class="mr-1" name="mingcute:time-line"></Icon> {{ event.time }}</p>
+                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1" name="mingcute:time-line"></Icon> {{ event.time }}</p>
                 <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1" name="tdesign:location"></Icon> {{ event.location }}</p>
               </div>
             </NuxtLink>
@@ -56,85 +56,142 @@ import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue';
 const days = [
   { 
     name: 'Úterý 31. 10. ',
-    hours: [12,13,14,15,16,17,18,19,20,21,22],
+    hours: [17,18,19,20,21],
     events: [
       {
-        name: 'Představení 1',
-        time: '12:00 - 14:45',
-        location: 'Hauerova 4, ateliér',
-        link: '/ucinkujici/barmanky',
-        startPosition: calculateTopPixels("12:00", 12),
-        duration: 165
+        name: 'Aneska & Band',
+        type: 'Koncert',
+        time: '17:30 - 18:15',
+        location: 'Klub Art (Obecní dům)',
+        link: '/ucinkujici/anezka-hruskova-band',
+        startPosition: calculateTopPixels("17:30", 17),
+        duration: 45
       },
       {
-        name: 'Představení 2',
-        time: '15:00 - 16:00',
-        location: 'Hauerova 4, ateliér',
-        link: '/ucinkujici/barmanky',
-        startPosition: calculateTopPixels("15:00", 12),
+        name: '3testry',
+        type: 'Inscenace',
+        time: '18:30 - 19:30',
+        location: 'Klub Art (Obecní dům)',
+        link: '/ucinkujici/3testry',
+        startPosition: calculateTopPixels("18:30", 17),
         duration: 60
       },
       {
-        name: 'Představení 2',
-        time: '17:00 - 17:30',
-        location: 'Hauerova 4, ateliér',
-        link: '/ucinkujici/barmanky',
-        startPosition: calculateTopPixels("17:00", 12),
+        name: 'Jana Orlová',
+        type: 'Performance',
+        time: '19:45 - 20:15',
+        location: 'Klub Art (Obecní dům)',
+        link: '/ucinkujici/orlova',
+        startPosition: calculateTopPixels("19:45", 17),
+        duration: 30
+      },
+      {
+        name: 'Rave in a grave',
+        type: 'Koncert',
+        time: '20:15 - 21:15',
+        location: 'Klub Art (Obecní dům)',
+        link: '/ucinkujici/rave-in-a-grave',
+        startPosition: calculateTopPixels("20:15", 17),
         duration: 60
       }
     ]
   },
   { 
     name: 'Středa 1. 11.',
-    hours: [17,18,19,20,21,22],
+    hours: [15,16,17,18,19,20,21,22,23],
     events: [
       {
-        name: 'Představení 4',
-        time: '17:00 - 18:00',
-        location: 'Hauerova 4, ateliér',
-        startPosition: calculateTopPixels("17:00", 17),
+        name: 'Filip Teller',
+        type: 'Workshop',
+        time: '15:00 - 17:00',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/teller-workshop',
+        startPosition: calculateTopPixels("15:00", 15),
+        duration: 120
+      },
+      {
+        name: 'V pasti',
+        type: 'Inscenace',
+        time: '17:30 - 18:30',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/vpasti',
+        startPosition: calculateTopPixels("17:30", 15),
         duration: 60
       },
       {
-        name: 'Představení 5',
-        time: '18:00 - 19:00',
-        location: 'Hauerova 4, ateliér',
-        startPosition: calculateTopPixels("18:00", 17),
-        duration: 60
+        name: 'Filip Teller',
+        type: 'Standup',
+        time: '18:50 - 20:00',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/teller',
+        startPosition: calculateTopPixels("18:50", 15),
+        duration: 70
       },
       {
-        name: 'Představení 6',
-        time: '19:15 - 20:45',
-        location: 'Hauerova 4, ateliér',
-        startPosition: calculateTopPixels("19:15", 17),
+        name: 'Chops',
+        type: 'Koncert',
+        time: '20:15 - 21:45',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/chops',
+        startPosition: calculateTopPixels("20:15", 15),
         duration: 90
+      },
+      {
+        name: 'Neminem',
+        type: 'Koncert',
+        time: '22:15 - 23:00',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/neminem',
+        startPosition: calculateTopPixels("22:15", 15),
+        duration: 45
       }
     ]
   },
   { 
     name: 'Čtvrtek 2. 11.',
-    hours: [17,18,19,20,21,22],
+    hours: [15,16,17,18,19,20,21,22,23],
     events: [
       {
-        name: 'Představení 4',
-        time: '17:00 - 18:00',
-        location: 'Hauerova 4, ateliér',
-        startPosition: calculateTopPixels("17:00", 17),
-        duration: 60
-      },
-      {
-        name: 'Představení 5',
-        time: '18:00 - 19:00',
-        location: 'Hauerova 4, ateliér',
-        startPosition: calculateTopPixels("18:00", 17),
-        duration: 60
-      },
-      {
-        name: 'Představení 6',
-        time: '19:15 - 20:45',
-        location: 'Hauerova 4, ateliér',
-        startPosition: calculateTopPixels("19:15", 17),
+        name: 'Pavel Nowak',
+        type: 'Workshop',
+        time: '15:00 - 16:30',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/pavel-nowak',
+        startPosition: calculateTopPixels("15:00", 15),
         duration: 90
+      },
+      {
+        name: 'Halloweenské překvapení',
+        type: 'Tajemství',
+        time: '17:00 - 19:00',
+        location: 'Hauerova 4',
+        startPosition: calculateTopPixels("17:00", 15),
+        duration: 120
+      },
+      {
+        name: 'Barmanky',
+        type: 'Inscenace',
+        time: '20:15 - 21:30',
+        location: 'Klub Art (Obecní dům)',
+        link: '/ucinkujici/barmanky',
+        startPosition: calculateTopPixels("20:15", 15),
+        duration: 75
+      },
+      {
+        name: 'Fredy & Krasty',
+        time: '22:00 - 23:00',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/fredy-krasty',
+        startPosition: calculateTopPixels("22:00", 15),
+        duration: 60
+      },
+      {
+        name: 'Nihillism',
+        time: '23:00 - 24:00',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/nihillism',
+        startPosition: calculateTopPixels("23:00", 15),
+        duration: 60
       }
     ]
   }
@@ -154,7 +211,7 @@ function calculateTopPixels(startTime, intervalStartHour) {
   const timeslotHeight = 60;
 
   // Calculate the top position in pixels
-  const topPixels = (startMinutesSinceMidnight / timeslotHeight) * 120;
+  const topPixels = (startMinutesSinceMidnight / timeslotHeight) * 240;
 
   return topPixels;
 }
@@ -162,6 +219,6 @@ function calculateTopPixels(startTime, intervalStartHour) {
 
 <style scoped>
 .hour{
-  height: 120px;
+  height: 240px;
 }
 </style>

@@ -4,7 +4,7 @@ type: 'Inscenace'
 description: 'Komedie z barového prostředí, která rozesměje i zanechá brouka v hlavě. (Anti)feministická smršť plná snů, reality a blbých keců.'
 location: 'OKO - KlubART'
 date: 'Čtvrtek 2. 11. 2023'
-time: '20:00 - 21:15'
+time: '20:15 - 21:30'
 cover: '/images/artists/barmanky.jpg'
 info: '
 <p>Co se skrývá za zavřenými dveřmi baru Shakers a jakou roli v životě hraje lidská touha?</p>

@@ -2,9 +2,9 @@
 title: 'V pasti'
 type: 'Inscenace'
 description: 'Dva generačně vzdálené partnerské páry v prostoru, odkud není úniku. Tato párová idylka se změní z obyčejné cesty na svatbu v noční můru.'
-location: 'Hauerova 4, ateliér'
+location: 'Hauerova 4'
 date: 'Středa 1. 11. 2023'
-time: '18:00 - 18:45'
+time: '17:30 - 18:30'
 cover: '/images/artists/vpasti.jpg'
 info: '
 <p>V pasti je černá komedie, která

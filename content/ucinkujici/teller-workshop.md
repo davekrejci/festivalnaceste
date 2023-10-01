@@ -2,9 +2,9 @@
 title: 'Filip Teller'
 type: 'Workshop'
 description: 'Od komunikaci k hravosti a zase zpátky - Kurz zaměřený na mezilidskou nonverbální komunikaci'
-location: 'Hauerova 4, ateliér'
-date: 'Čtvrtek 1. 11. 2023'
-time: '17:00 - 18:00'
+location: 'Hauerova 4'
+date: 'Středa 1. 11. 2023'
+time: '15:00 - 17:00'
 cover: '/images/artists/teller2.jpg'
 info: '
 <h2><b>Od komunikaci k hravosti a zase zpátky.</b></h2>
@@ -14,19 +14,23 @@ info: '
 links: [
     {
         url: 'https://www.facebook.com/TellerFilip/',
-        icon: 'fa6-brands:facebook-f'
+        icon: 'fa6-brands:facebook-f',
+        text: 'Facebook'
     },
     {
         url: 'https://www.youtube.com/@filipteller2058/videos',
-        icon: 'fa-brands:youtube'
+        icon: 'fa-brands:youtube',
+        text: 'Youtube'
     },
     {
         url: 'https://www.instagram.com/filipteller/?hl=cs/',
-        icon: 'fa6-brands:instagram'
+        icon: 'fa6-brands:instagram',
+        text: 'Instagram'
     },
     {
         url: 'https://filipteller.com/',
-        icon: 'mdi:web'
+        icon: 'mdi:web',
+        text: 'Web'
     }
 ]
 slug: teller-workshop
