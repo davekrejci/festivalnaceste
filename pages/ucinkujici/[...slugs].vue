@@ -5,11 +5,11 @@
             :style="{ backgroundImage: 'url(' + data.cover + ')' }">
             <div class="absolute inset-0 bg-gradient-to-tr from-neutral-900 via-transparent"></div>
             <div class="backdrop-brightness-50 text-center w-full h-full m-0 p-8 flex items-end justify-start">
-                <div @click="this.$router.go(-1)"
+                <div @click="$router.back()"
                     class="absolute top-5 left-5 btn btn-outline btn-sm text-white hover:bg-transparent hover:text-orange-500">
                     <Icon size="16" name="ph:caret-left"></Icon>
                     <span>Zpět</span>
-            </div>
+                </div>
                 <div>
                     <div class="flex flex-col items-start text-left">
                         <p class="text-white font-semibold uppercase mb-1">{{ data.type }}</p>
@@ -32,7 +32,7 @@
                     <li v-for="(link, index) in data.links" :key="index" class="hover:text-orange-400 p-1 m-0 rounded-lg">
                         <a :href="link.url" target="_blank">
                             <Icon size="24" :name="link.icon"></Icon>
-                            <span class="ml-2">{{link.text}}</span>
+                            <span class="ml-2">{{ link.text }}</span>
                         </a>
                     </li>
                 </ul>
@@ -68,6 +68,7 @@
 p {
     margin-bottom: 1rem;
 }
+
 .cover {
     background-position: 0 40% !important;
 }
