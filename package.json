@@ -19,6 +19,7 @@
     "@heroicons/vue": "^2.0.16",
     "@tailwindcss/line-clamp": "^0.4.4",
     "daisyui": "^2.51.0",
-    "nuxt-leaflet": "^0.0.27"
+    "nuxt-leaflet": "^0.0.27",
+    "qalendar": "^3.5.0"
   }
 }

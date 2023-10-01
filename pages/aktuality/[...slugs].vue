@@ -30,7 +30,7 @@ let post = null;
 try {
     const route = useRoute();
     const slug = route.params.slugs[0];
-    post = await queryContent().where({ slug: slug }).only(['title', 'date']).findOne();
+    post = await queryContent('/aktuality').where({ slug: slug }).only(['title', 'date']).findOne();
 }
 catch (error) {
     console.log(error);

@@ -50,7 +50,7 @@ body {
   bottom: 0;
   height: 50px;
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 
 .leaves img {

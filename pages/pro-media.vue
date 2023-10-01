@@ -9,24 +9,24 @@
         <span class="font-bold text-lg">Lucie Tománkova</span>
         <span>Vedoucí mediální komunikace a PR</span>
         <span>+420 730 959 633</span>
-        <span>tom0225@slu.cz</span>
+        <span>festivalnaceste@post.cz</span>
       </div>
     </section>
-    <!-- <section class="py-8">
+    <section class="py-8">
       <h2 class="font-bold text-2xl mb-2">
         Tiskové zprávy
       </h2>
       <div class="">
         <div class="flex py-2">
           <div class="flex-grow">
-            <span>21.3.2023</span>
+            <span>1.10.2023</span>
             <p>Tisková zpráva č.1</p>
           </div>
           <div class="my-auto">
-            <a href="#" class="bg-orange-600 text-white p-2 px-4 rounded-md">Stáhnout soubor</a>
+            <a href="/downloads/tiskova_zprava_1.pdf" class="bg-orange-600 text-white p-2 px-4 rounded-md">Stáhnout soubor</a>
           </div>
         </div>
-        <div class="flex py-2">
+        <!-- <div class="flex py-2">
           <div class="flex-grow">
             <span>21.3.2023</span>
             <p>Tisková zpráva č.2</p>
@@ -34,10 +34,10 @@
           <div class="my-auto">
             <a href="#" class="bg-orange-600 text-white p-2 px-4 rounded-md">Stáhnout soubor</a>
           </div>
-        </div>
+        </div> -->
         
       </div>
-    </section> -->
+    </section>
     <section class="py-8">
       <h2 class="font-bold text-2xl mb-4">
         Materiály pro média
