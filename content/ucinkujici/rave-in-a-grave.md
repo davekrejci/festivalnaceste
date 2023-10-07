@@ -19,10 +19,10 @@ info: '
 <li>Patricie Tachas- zpěv </li>
 <li>Hanka Patloková- akustická kytara/zpěv </li>
 <li>Jakub Junek- housle/zpěv </li>
-<li>Aleš Vojta- bicí </li>
+<li>Jaroslav Vacek- bicí </li>
 <li>Michael Krejčí- basa/elektrická kytara </li>
 <li>Eliška Nedomová- saxofon </li>
-<li>(možný doplněk: Štěpán Valík- housle)</li>
+<li>Štěpán Valík- housle</li>
  </ul>
 '
 links: [

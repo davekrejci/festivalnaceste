@@ -47,7 +47,12 @@ links: [
         text: 'Web'
     }
 ]
-images: ['https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/314118397_100717966194301_6868181312629902238_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=WzW1JS8H8TUAX_wOAov&_nc_ht=scontent-prg1-1.xx&oh=00_AfC_c-4OMg_yd46dNWsAdKP6swIZ1gvzUhmXeZhfhk_3_g&oe=651DFEFD','https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/316546336_115265854739512_8266311383585158599_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5614bc&_nc_ohc=LW3SRGcUdDYAX-7CivJ&_nc_ht=scontent-prg1-1.xx&oh=00_AfBMhA9g32z33KVHbQ-sgdRfZzsl6G-_K8kn5ahFIVRTcA&oe=651D16A2','https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/326246961_715128006943043_5858480663034373080_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=49d041&_nc_ohc=6y-VEDIMMe4AX9XUxbG&_nc_ht=scontent-prg1-1.xx&oh=00_AfDr_zX6Zg1nxFi6iVpD1wY3ta2I6zaYJZ4LF-ihSGOrQQ&oe=651D717D', 'http://www.soro.cz/bgalerie/71.jpg']
+images: [
+'/images/artists/pavel-nowak.jpg',
+'/images/artists/pavel-nowak3.jpg',
+'/images/artists/pavel-nowak4.jpg',
+'/images/artists/pavel-nowak5.jpg',
+]
 videos: [
     {
         src: 'https://www.youtube.com/embed/WB0szg7mIu0',
