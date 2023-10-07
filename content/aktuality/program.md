@@ -1,5 +1,5 @@
 ---
-title: 'Festival Na cestě zveřeňuje program'
+title: 'Festival Na cestě zveřejňuje program'
 description: Ve dnech 31. října až 2. listopadu 2023 proběhne v Opavě již 17. ročník Festivalu Na cestě, za kterým stojí skupina studentů Kulturní dramaturgie v divadelní praxi.
 date: '2023-10-07'
 slug: program
