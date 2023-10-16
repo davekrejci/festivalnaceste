@@ -4,7 +4,7 @@ type: 'Inscenace'
 description: 'Interaktivní monodrama o životě, vůních, lásce, santalovém dřevě a kávě'
 location: 'Klub Art (Obecní dům)'
 date: 'Úterý 31. 10. 2023'
-time: '18:30 - 19:30'
+time: '18:45 - 19:45'
 cover: '/images/artists/3testry.jpg'
 info: '
 <p>Interaktivní monodrama o životě, vůních, lásce, santalovém dřevě a kávě. Irena je herečka oblastního divadla, která momentálně žije tak trochu sama. Trpí svou samotou, má podivné noční můry, pocity úzkosti. A navíc se bojí svůj prostor opustit. Bojí se vykročit ven, do neznáma, mimo zaběhlé konvence, udělat ve svém životě nějaký zásadní krok. Bojí se budoucnosti, neví, co s přítomností a má nevyřešenou minulost. Irena má od mládí svou (doslova) kouzelnou krabičku se serepetičkami, které v sobě ukrývají vzpomínky na dětství i dospívání. A kromě toho vlastní i několik lahviček testerů s vůněmi, které hrají v jejím životě hodně významnou roli. Jenže Irena se nedokáže rozhodnout, kterou z nich si ve svízelné situaci vybrat. Pomůžete jí, prosím...?</p>

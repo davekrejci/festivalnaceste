@@ -4,7 +4,7 @@ type: 'Performance'
 description: 'Performance jako „živá poezie“. Tělo pojímá jako pole události, jako prostředek nevědomí.'
 location: 'Klub Art (Obecní dům)'
 date: 'Úterý 31. 10. 2023'
-time: '19:45 - 20:15'
+time: '20:00 - 20:30'
 cover: '/images/artists/orlova.jpg'
 info: '
 <p>Jana Orlová (1986) je básnířka a performerka. V roce 2012 vydala v nakladatelství Pavel Mervart sbírku Čichat oheň s vlastními ilustracemi, v nakladatelství Větrné mlýny pak v roce 2017 sbírku Újedě a v roce 2022 sbírku Neutečeš. V roce 2019 jí vyšly sbírky v ukrajinštině a rumunštině, 2020 vydala ebook v Indii, 2021 sbírku v polštině, 2022 v dánštině.</p>

@@ -70,7 +70,7 @@ const days = [
       {
         name: '3testry',
         type: 'Inscenace',
-        time: '18:30 - 19:30',
+        time: '18:45 - 19:45',
         location: 'Klub Art (Obecní dům)',
         link: '/ucinkujici/3testry',
         startPosition: calculateTopPixels("18:30", 17),
@@ -79,7 +79,7 @@ const days = [
       {
         name: 'Jana Orlová',
         type: 'Performance',
-        time: '19:45 - 20:15',
+        time: '20:00 - 20:30',
         location: 'Klub Art (Obecní dům)',
         link: '/ucinkujici/orlova',
         startPosition: calculateTopPixels("19:45", 17),
@@ -88,7 +88,7 @@ const days = [
       {
         name: 'Rave in a grave',
         type: 'Koncert',
-        time: '20:15 - 21:15',
+        time: '20:45 - 21:45',
         location: 'Klub Art (Obecní dům)',
         link: '/ucinkujici/rave-in-a-grave',
         startPosition: calculateTopPixels("20:15", 17),
@@ -120,7 +120,7 @@ const days = [
       },
       {
         name: 'Filip Teller',
-        type: 'Standup',
+        type: 'Stand up',
         time: '18:50 - 20:00',
         location: 'Hauerova 4',
         link: '/ucinkujici/teller',
