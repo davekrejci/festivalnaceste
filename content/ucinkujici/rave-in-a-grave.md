@@ -4,7 +4,7 @@ type: 'Koncert'
 description: 'Olomoucká kapela pohybující se někde mezi folkem, punkem a popem.'
 location: 'Klub Art (Obecní dům)'
 date: 'Úterý 31. 10. 2023'
-time: '20:15 - 21:15'
+time: '20:45 - 21:45'
 cover: '/images/artists/raveinagrave.jpg'
 info: '
 <p>Olomoucká kapela s názvem Rave in a grave. ”Proč? Protože se jednou stejně všichni sejdem v hrobě, a to bude teprve šrumec!“ </p>
