@@ -5,7 +5,7 @@ description: 'Komedie z barového prostředí, která rozesměje i zanechá brou
 location: 'OKO - KlubART'
 date: 'Čtvrtek 2. 11. 2023'
 time: '20:15 - 21:30'
-cover: '/images/artists/barmanky.jpg'
+cover: '/images/artists/barmanky1.jpg'
 info: '
 <p>Co se skrývá za zavřenými dveřmi baru Shakers a jakou roli v životě hraje lidská touha?</p>
 <br>
