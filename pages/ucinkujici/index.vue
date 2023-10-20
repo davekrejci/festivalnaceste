@@ -121,7 +121,7 @@
                     <p class="text-white">Techno hudba, ovlivněna prvky funky, old school, hip-hopu, breakbeatu až po Y2Kcore</p>
                 </div>
             </NuxtLink>
-            <NuxtLink to="/ucinkujici/slampoetry" class="tile overflow-hidden relative h-60 lg:col-start-1 lg:col-span-1 lg:row-start-7 lg:row-span-2 border-2 border-black bg-indigo-400">
+            <!-- <NuxtLink to="/ucinkujici/slampoetry" class="tile overflow-hidden relative h-60 lg:col-start-1 lg:col-span-1 lg:row-start-7 lg:row-span-2 border-2 border-black bg-indigo-400">
                 <nuxt-img src="/images/artists/slampoetry.jpg" format="webp" fit="cover" class="tile overflow-hidden-bg-image absolute left-0 top-0 w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110 hover:brightness-50"
                     loading="lazy"/>
                 <div class="absolute left-0 bottom-0 p-4 z-10 pointer-events-none">
@@ -138,7 +138,7 @@
                     <h2 class="text-white font-bold text-2xl">Vernisáž</h2>
                     <p class="text-white">Vernisáž</p>
                 </div>
-            </NuxtLink>
+            </NuxtLink> -->
         </div>
     </section>
 </template>
