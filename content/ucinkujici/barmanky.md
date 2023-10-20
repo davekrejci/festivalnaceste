@@ -29,7 +29,7 @@ nadprůměrně dobře placené zaměstnání, zpravidla v oblasti managementu, a
 stylem života - utrácením vydělaných peněz za 
 luxusní zboží, které dávali na obdiv svému okolí.</p>
 '
-images: []
+images: ['/images/artists/barmanky2.jpg','/images/artists/barmanky3.jpg','/images/artists/barmanky4.jpg','/images/artists/barmanky5.jpg','/images/artists/barmanky6.jpg','/images/artists/barmanky7.jpg']
 slug: barmanky
 ---
 
