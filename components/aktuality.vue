@@ -3,7 +3,7 @@
         <div>
             <h1 class="text-2xl font-bold mb-12 leading-7 sm:truncate sm:text-3xl sm:tracking-tight text-center">Aktuality</h1>
             <section>
-                <article v-for="post of posts" :key="post.slug" class="border-2 border-neutral-500 rounded-md mb-4">
+                <article v-for="post of posts" :key="post.slug" class="card bg-[#341819] rounded shadow-xl mb-4">
                     <div class="md:flex md:h-56">
                         <nuxt-img
                             :src="post.img"
@@ -14,9 +14,9 @@
                             class="object-cover w-full h-56 rounded-t-md md:rounded-l-md md:rounded-r-none md:w-64 md:min-w-[256px]"
                         />
                         <div class="flex flex-col pt-4 md:mx-6 px-6 pb-6 py-16">
-                            <div class="mb-2 text-sm text-neutral-400">{{ formatDate(post.date) }}</div>
+                            <div class="mb-2 text-sm text-neutral-300">{{ formatDate(post.date) }}</div>
                             <div>
-                                <h2 class="text-xl mb-4 font-semibold hover:text-orange-400">
+                                <h2 class="text-xl mb-4 font-semibold hover:text-primary">
                                     <nuxt-link :to="`/aktuality/${post.slug}`">
                                         {{ post.title }}
                                     </nuxt-link>
@@ -26,7 +26,7 @@
                                 </p>
                                 <nuxt-link class="text-orange-400" :to="`/aktuality/${post.slug}`">
                                     <div
-                                        class="btn btn-outline rounded-md btn-sm text-white hover:bg-transparent hover:text-orange-500">
+                                        class="btn btn-primary text-black hover:text-white rounded btn-sm ">
                                         Přečíst článek</div>
                                 </nuxt-link>
                             </div>

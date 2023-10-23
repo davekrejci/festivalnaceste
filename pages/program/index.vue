@@ -9,8 +9,8 @@
             'w-36 py-2.5 text-sm font-bold leading-5 tracking-tight',
             'text-neutral-200 font-bold focus:outline-none',
             selected
-              ? 'bg-orange-500 border border-orange-500 text-white'
-              : 'hover:bg-orange-500 hover:text-white border border-neutral-500 hover:border-orange-500',
+              ? 'bg-primary border border-primary text-white'
+              : 'hover:bg-primary hover:text-white border border-neutral-500 hover:border-orange-500',
           ]">
             {{ day.name }}
           </button>
@@ -37,8 +37,8 @@
               <div class="absolute z-10 pointer-events-none w-full h-full">
                 <p class="text-white text-xs font-semibold uppercase mb-1">{{event.type}}</p>
                 <h2 class="text-white font-bold text-md">{{ event.name }}</h2>
-                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1" name="mingcute:time-line"></Icon> {{ event.time }}</p>
-                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1" name="tdesign:location"></Icon> {{ event.location }}</p>
+                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ event.time }}</p>
+                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="tdesign:location"></Icon> {{ event.location }}</p>
               </div>
             </NuxtLink>
             <div v-for="(hour,index) in day.hours" :key="index" class="hour border-t border-dashed border-neutral-700"></div>
@@ -108,6 +108,15 @@ const days = [
         link: '/ucinkujici/teller-workshop',
         startPosition: calculateTopPixels("15:00", 15),
         duration: 120
+      },
+      {
+        name: 'Bod Doteku',
+        type: 'Vernisáž',
+        time: '17:00 - 17:30',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/bod-doteku',
+        startPosition: calculateTopPixels("17:00", 15),
+        duration: 30
       },
       {
         name: 'V pasti',

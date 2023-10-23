@@ -32,7 +32,7 @@
   </div>
   <section id="aktuality" class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
     <Aktuality :count='3'></Aktuality>
-    <div class="btn btn-outline btn-md text-white hover:bg-transparent hover:text-orange-500 mt-4">
+    <div class="btn btn-primary hover:text-white rounded mt-4">
       <a href="/aktuality">Zobrazit všechny aktuality</a>
     </div>
   </section>

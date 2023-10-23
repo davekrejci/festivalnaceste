@@ -1,7 +1,7 @@
 <template>
     <div v-if="post">
         <div class="max-w-3xl mx-auto min-h-screen p-8">
-            <div class="mb-2 text-sm">
+            <div class="mb-4 text-sm">
                 <NuxtLink to="/aktuality">Aktuality</NuxtLink><span class="text-neutral-500"> / </span><span
                     class="text-neutral-500"> {{ post.title }}</span>
             </div>

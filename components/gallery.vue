@@ -14,7 +14,7 @@
                     :to="'/galerie/' + year"
                     class=""
                 >
-                <div class="mr-2 border-2 border-neutral p-2 px-4 font-semibold text-slate-200 hover:text-orange-400 cursor-pointer">
+                <div class="btn btn-primary btn-sm rounded">
                     {{ year }}
                 </div>
                 </NuxtLink>
@@ -39,9 +39,9 @@
     </lightbox>
 </template>
 
-<style>
+<style scoped>
 .router-link-active div {
-  color: #fb923c;
+  color: white;
 }
 </style>
   
