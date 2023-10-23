@@ -19,14 +19,14 @@
           <div v-if="item.children">
             <div class="dropdown dropdown-end">
               <label tabindex="0"
-                class="-mx-5 py-2 px-6 flex cursor-pointer items-center gap-x-1 text-md font-semibold leading-7 hover:text-orange-400">
+                class="-mx-5 py-2 px-6 flex cursor-pointer items-center gap-x-1 text-md font-semibold leading-7 hover:text-primary">
                 {{ item.text }}
                 <Icon size="16" name="ph:caret-down-bold" />
               </label>
               <ul tabindex="0" class="dropdown-content bg-base-300 p-2 shadow rounded-md w-52 mt-5">
                 <li v-for="subitem in item.children" :key="subitem.link">
                   <NuxtLink :to="subitem.link" @click="mobileMenuOpen = false">
-                    <div class="p-4 cursor-pointer hover:text-orange-400">
+                    <div class="p-4 cursor-pointer hover:text-primary">
                       {{ subitem.text }}
                     </div>
                   </NuxtLink>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <NuxtLink v-else :to="item.link" @click="mobileMenuOpen = false">
-            <div class="-mx-3 py-2 px-6 font-semibold leading-7 hover:text-orange-400">
+            <div class="-mx-3 py-2 px-6 font-semibold leading-7 hover:text-primary">
               {{ item.text }}
             </div>
           </NuxtLink>
@@ -43,12 +43,12 @@
 
       </PopoverGroup>
       <div class="hidden md:flex items-center ml-8 justify-between gap-1 md:place-self-center md:justify-self-end">
-        <div class="hover:text-orange-600 p-1 m-0 rounded-lg">
+        <div class="hover:text-primary p-1 m-0 rounded-lg">
           <a href="https://www.instagram.com/festivalnaceste" target="_blank">
             <Icon size="24" name="fa6-brands:instagram"></Icon>
           </a>
         </div>
-        <div class="hover:text-orange-600 p-1 m-0 rounded-lg">
+        <div class="hover:text-primary p-1 m-0 rounded-lg">
           <a href="https://www.facebook.com/festnaceste" target="_blank">
             <Icon size="24" name="fa6-brands:facebook-f"></Icon>
           </a>
@@ -113,7 +113,7 @@
 
 <style scoped>
 .router-link-active {
-  color: #fb923c;
+  color: #F97316;
 }
 
 .nav {

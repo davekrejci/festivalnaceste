@@ -27,7 +27,7 @@ function scrollToSection() {
     display: block;
     height: 28px;
     margin: 0 auto;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
     position: relative;
     top: 0;
     width: 28px;

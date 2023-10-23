@@ -6,7 +6,7 @@
             <div class="absolute inset-0 bg-gradient-to-tr from-neutral-900 via-transparent"></div>
             <div class="backdrop-brightness-50 text-center w-full h-full m-0 p-8 flex items-end justify-start">
                 <div @click="$router.back()"
-                    class="absolute top-5 left-5 btn btn-outline btn-sm text-white hover:bg-transparent hover:text-orange-500">
+                    class="absolute top-5 left-5 btn btn-primary rounded btn-sm hover:text-white px-4">
                     <Icon size="16" name="ph:caret-left"></Icon>
                     <span>Zpět</span>
                 </div>
@@ -21,18 +21,18 @@
         </section>
         <!-- Description section -->
         <section class="p-8 py-8 bg-base-300 xl:max-w-7xl mx-auto">
-            <div class="mb-8 p-4 border border-neutral-400">
-                <span class="m-0 p-0 mb-0 text-white text-lg font-bold block">{{ data.date }}</span>
-                <span class="m-0 p-0 mb-0 text-white block">{{ data.time }}</span>
-                <span class="m-0 p-0 pt-2 text-white font-semibold block">{{ data.location }}</span>
+            <div class="mb-8 p-4 card bg-[#341819] rounded-sm shadow-xl">
+                <span class="m-0 p-0 mb-2 text-white text-lg font-bold block">{{ data.date }}</span>
+                <span class="m-0 p-0 mb-0 text-white block"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ data.time }}</span>
+                <span class="m-0 p-0 pt-2 text-white font-semibold block"><Icon size="16" class="mr-1 my-0" name="tdesign:location"></Icon> <a class="hover:text-primary" :href="data.locationLink">{{ data.location }}</a></span>
             </div>
             <div v-html="data.info"></div>
             <div v-if="data.links" class="w-32 mt-8">
                 <ul>
-                    <li v-for="(link, index) in data.links" :key="index" class="hover:text-orange-400 p-1 m-0 rounded-lg">
+                    <li v-for="(link, index) in data.links" :key="index" class="hover:text-primary p-1 m-0 rounded-lg">
                         <a :href="link.url" target="_blank">
                             <Icon size="24" :name="link.icon"></Icon>
-                            <span class="ml-2">{{ link.text }}</span>
+                            <span class="ml-3">{{ link.text }}</span>
                         </a>
                     </li>
                 </ul>

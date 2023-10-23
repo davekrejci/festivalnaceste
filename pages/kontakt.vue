@@ -1,8 +1,8 @@
 <template>
-  <div class="lg:w-3/5 mx-auto">
+  <div class="lg:w-3/5 xl:max-w-7xl mt-8 mx-auto">
     <div class="2xl:flex p-8 md:px-16">
-      <div class="p-8 w-full flex 2xl:justify-center 2xl:items-center">
-        <div>
+      <div class="w-full flex">
+        <div class="mb-16">
           <h1 class="mb-4 text-2xl text-neutral-200 font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Napište
             nám</h1>
           <p class="text-neutral-300">Máte nějakou otázku na kterou jste nenašli odpověď?</p>
@@ -26,7 +26,7 @@
       </div>
 
       <!-- MAP -->
-      <div class="p-4 mx-2 min-h-[400px] w-full max-w-[600px] mx-auto relative">
+      <div class="p-4 mx-2 min-h-[400px] w-full max-w-[600px] relative">
         <!-- Skeleton loader -->
         <div class="absolute inset-0 bg-[#e8eaed] shimmer rounded-sm"></div>
         <!-- Map iframe -->
