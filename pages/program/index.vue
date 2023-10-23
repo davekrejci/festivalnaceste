@@ -110,6 +110,15 @@ const days = [
         duration: 120
       },
       {
+        name: 'Bod Doteku',
+        type: 'Vernisáž',
+        time: '17:00 - 17:30',
+        location: 'Hauerova 4',
+        link: '/ucinkujici/bod-doteku',
+        startPosition: calculateTopPixels("17:00", 15),
+        duration: 30
+      },
+      {
         name: 'V pasti',
         type: 'Inscenace',
         time: '17:30 - 18:30',
