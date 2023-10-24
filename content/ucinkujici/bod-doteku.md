@@ -9,14 +9,15 @@ time: '17:00 - 17:30'
 cover: '/images/artists/bod-doteku.jpg'
 info: '
 <p>Po absolvování Kulturní dramaturgie se zaměřením na divadlo na Slezské univerzitě se umělecké vyjádření autorky začalo ubírat od divadla směrem k performanci.</p>
-<br>
 <p>Výstava nabízí průřez dosavadní tvorbou umělkyně.</p>
+<br>
 <p>Součástí vernisáže bude i živá performance.</p>
-
+<br>
+<p>Akce se koná v rámci Festivalu Na cestě. Vernisáž je organizovaná Ústavem filmové, televizní a rozhlasové tvorby.</p>
 '
 links: [
     {
-        url: 'https://performance.ffa.vutbr.cz/Lid%C3%A9/hana-magdonova/',
+        url: 'https://hanamagdonova.wordpress.com/',
         icon: 'mdi:web',
         text: 'Web'
     }

@@ -20,13 +20,15 @@
       </h2>
       <div class="grid grid-cols-1 gap-8">
         <div class="flex card bg-[#341819] shadow-xl rounded p-8">
-          <div class="mb-2">
+          <div class="mb-3">
             <span>1.10.2023</span>
             <p class="font-bold">Tisková zpráva č.1</p>
           </div>
-          <div class="my-auto">
-            <a href="/downloads/tiskova_zprava_1.docx" class="btn btn-primary rounded btn-sm">Stáhnout soubor</a>
-          </div>
+          <a href="/downloads/tiskova_zprava_1.docx">
+            <div class="my-auto btn btn-primary rounded btn-sm">
+              Stáhnout soubor
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -42,12 +44,14 @@
             <h3 class="font-bold mb-4">Loga ke stažení</h3>
           </div>
           <span class="text-neutral-300 mb-6">Zazipovaná složka s několika formáty našeho loga</span>
-          <div>
-            <a href="/downloads/logo_pack.zip" class="btn btn-primary rounded btn-sm">Stáhnout soubor</a>
-          </div>
-          
+          <a href="/downloads/logo_pack.zip">
+            <div class="btn btn-primary rounded btn-sm">
+              Stáhnout soubor
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
   </div>
-  </template>
+</template>
