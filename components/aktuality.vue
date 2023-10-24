@@ -24,11 +24,11 @@
                                 <p class="line-clamp-3">
                                     {{ post.description }}
                                 </p>
-                                <nuxt-link class="text-orange-400" :to="`/aktuality/${post.slug}`">
-                                    <div
-                                        class="btn btn-primary text-black hover:text-white rounded btn-sm ">
-                                        Přečíst článek</div>
-                                </nuxt-link>
+                                <NuxtLink :to="`/aktuality/${post.slug}`">
+                                    <div class="btn btn-primary text-black hover:text-white rounded btn-sm ">
+                                        Přečíst článek
+                                    </div>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

@@ -5,21 +5,23 @@
       class="absolute left-0 bottom-0 h-full w-full max-w-none m-0 bg-[url('@/assets/images/background.svg')] bg-cover bg-bottom bg-no-repeat">
     </div>
     <div class="leaves">
-      <div class="leaf1"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf2"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf3"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf4"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf6"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf7"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf8"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf9"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf10"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
-      <div class="leaf11"><nuxt-img src="/images/leaf.svg" alt="leaf-image"/></div>
+      <div class="leaf1"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf2"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf3"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf4"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf6"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf7"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf8"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf9"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf10"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
+      <div class="leaf11"><nuxt-img src="/images/leaf.svg" alt="leaf-image" /></div>
     </div>
     <div class="absolute left-0 top-0 w-full h-full max-w-none flex justify-center items-center backdrop-brightness-50">
       <div class="text-center text-amber-100">
         <div class="-mt-20">
-          <div class="h-64 w-64 lg:h-96 lg:w-96 max-w-none bg-[url('@/assets/images/logo.svg')] bg-cover bg-center bg-no-repeat"></div>
+          <div
+            class="h-64 w-64 lg:h-96 lg:w-96 max-w-none bg-[url('@/assets/images/logo.svg')] bg-cover bg-center bg-no-repeat">
+          </div>
           <hr class="mb-4 -mt-10 lg:-mt-16 lg:mb-8 border-2 border-amber-100">
           <h2 class="text-2xl font-bold tracking-tighter">31. 10. – 2. 11. 2023</h2>
           <h2 class="text-2xl font-bold">Opava</h2>
@@ -32,9 +34,11 @@
   </div>
   <section id="aktuality" class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
     <Aktuality :count='3'></Aktuality>
-    <div class="btn btn-primary hover:text-white rounded mt-4">
-      <a href="/aktuality">Zobrazit všechny aktuality</a>
-    </div>
+    <NuxtLink to="/aktuality">
+      <div class="btn btn-primary hover:text-white rounded mt-4">
+        Zobrazit všechny aktuality
+      </div>
+    </NuxtLink>
   </section>
   <section class="bg-[#eab475] p-16 pb-28">
     <Sponzori></Sponzori>
@@ -46,7 +50,7 @@ body {
   overflow: hidden;
 }
 
-.jumpingButtonWrapper{
+.jumpingButtonWrapper {
   bottom: 0;
   height: 50px;
   position: absolute;
