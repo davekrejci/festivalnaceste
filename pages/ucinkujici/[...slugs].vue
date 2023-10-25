@@ -21,6 +21,10 @@
         </section>
         <!-- Description section -->
         <section class="p-8 py-8 bg-base-300 xl:max-w-7xl mx-auto">
+            <div v-if="data.offprogram" class="-mt-3">
+                <span class="badge badge-sm badge-neutral text-neutral-200 -ml-1 rounded-md mb-1 text-md font-semibold">Off program</span>
+                <span class="text-neutral-400 text-sm mb-4 block">Tento účinkující není součástí hlavního programu a může se krýt s dalšími účinkujícími!</span>
+            </div>
             <div class="mb-8 p-4 card bg-[#341819] rounded-sm shadow-xl">
                 <span class="m-0 p-0 mb-2 text-white text-lg font-bold block">{{ data.date }}</span>
                 <span class="m-0 p-0 mb-0 text-white block"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ data.time }}</span>
@@ -45,7 +49,7 @@
                     @click.prevent="openLightbox(index)">
                     <nuxt-img :src="image" format="webp" fit="cover" height="300" width="300"
                         class="w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110"
-                        loading="lazy" />
+                        />
                 </div>
                 <div v-for="(video, index) in data.videos" :key="index" class="relative overflow-hidden aspect-square"
                     @click.prevent="openLightbox(index)">
@@ -83,20 +87,15 @@ let data = null;
 try {
     const route = useRoute();
     const slug = route.params.slugs[0];
-    console.log(slug);
     data = await queryContent('/ucinkujici').where({ slug: slug }).findOne();
-    console.log(data);
 }
 catch (error) {
     console.log(error);
 }
 
 function openLightbox(index) {
-    console.log('open lightbox called!');
     lightboxIndex.value = index;
-    console.log(lightboxIndex);
     lightboxVisible.value = true;
-    console.log(lightboxVisible);
 }
 function closeLightbox() {
     lightboxIndex.value = 0;

@@ -1,6 +1,7 @@
 <template>
   <footer class="footer footer-center p-10 bg-base-300 text-neutral-400 rounded">
-  <div class="flex flex-row flex-wrap gap-4 justify-center">
+  <Sponzori></Sponzori>
+  <div class="mt-8 flex flex-row flex-wrap gap-4 justify-center">
     <a v-for="item in menuItems" :key="item.link" :href="item.link" class="link link-hover">{{ item.text }}</a>
   </div> 
   <div>

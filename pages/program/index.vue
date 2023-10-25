@@ -37,8 +37,8 @@
               <div class="absolute z-10 pointer-events-none w-full h-full">
                 <p class="text-white text-xs font-semibold uppercase mb-1">{{event.type}}</p>
                 <h2 class="text-white font-bold text-md">{{ event.name }}</h2>
-                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ event.time }}</p>
-                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="tdesign:location"></Icon> {{ event.location }}</p>
+                <div class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ event.time }}</div>
+                <div class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="tdesign:location"></Icon> {{ event.location }}</div>
               </div>
             </NuxtLink>
             <div v-for="(hour,index) in day.hours" :key="index" class="hour border-t border-dashed border-neutral-700"></div>
@@ -58,6 +58,15 @@ const days = [
     name: 'Úterý 31. 10. ',
     hours: [17,18,19,20,21],
     events: [
+      {
+        name: 'Zahájení festivalu',
+        type: 'Zahájení',
+        time: '17:00 - 17:30',
+        location: 'Klub Art (Obecní dům)',
+        link: '',
+        startPosition: calculateTopPixels("17:00", 17),
+        duration: 30
+      },
       {
         name: 'Aneska & Band',
         type: 'Koncert',
@@ -108,15 +117,6 @@ const days = [
         link: '/ucinkujici/teller-workshop',
         startPosition: calculateTopPixels("15:00", 15),
         duration: 120
-      },
-      {
-        name: 'Bod Doteku',
-        type: 'Vernisáž',
-        time: '17:00 - 17:30',
-        location: 'Hauerova 4',
-        link: '/ucinkujici/bod-doteku',
-        startPosition: calculateTopPixels("17:00", 15),
-        duration: 30
       },
       {
         name: 'V pasti',

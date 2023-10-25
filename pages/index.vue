@@ -25,24 +25,34 @@
           <hr class="mb-4 -mt-10 lg:-mt-16 lg:mb-8 border-2 border-amber-100">
           <h2 class="text-2xl font-bold tracking-tighter">31. 10. – 2. 11. 2023</h2>
           <h2 class="text-2xl font-bold">Opava</h2>
+          <NuxtLink to="/program" class="btn btn-primary border-none shadow-xl btn-md rounded mt-8 hover:text-white">Program festivalu</NuxtLink>
         </div>
       </div>
     </div>
-    <div class="jumpingButtonWrapper hidden lg:block">
+    <div class="jumpingButtonWrapper lg:block">
       <JumpingButton to="aktuality"></JumpingButton>
     </div>
   </div>
   <section id="aktuality" class="pb-24 pt-16 flex flex-col items-center bg-[#190c0a]">
     <Aktuality :count='3'></Aktuality>
     <NuxtLink to="/aktuality">
-      <div class="btn btn-primary hover:text-white rounded mt-4">
+      <div class="btn btn-primary hover:text-white rounded mt-4 shadow-xl">
         Zobrazit všechny aktuality
       </div>
     </NuxtLink>
   </section>
-  <section class="bg-[#eab475] p-16 pb-28">
-    <Sponzori></Sponzori>
+  <section id="ucinkujici" class="pb-24 pt-16 px-4 flex flex-col items-center bg-gradient-to-b from-[#190c0a]">
+    <h1 class="text-2xl font-bold mb-12 leading-7 sm:truncate sm:text-3xl sm:tracking-tight text-center">Účinkující</h1>
+    <UcinkujiciCarousel></UcinkujiciCarousel>
+    <NuxtLink to="/ucinkujici">
+      <div class="btn btn-primary hover:text-white rounded mt-16 shadow-xl">
+          Zobrazit všechny účinkující
+      </div>
+    </NuxtLink>
   </section>
+  <!-- <section class=" p-16 pb-28">
+    <Sponzori></Sponzori>
+  </section> -->
 </template>
 
 <style scoped>
