@@ -87,20 +87,15 @@ let data = null;
 try {
     const route = useRoute();
     const slug = route.params.slugs[0];
-    console.log(slug);
     data = await queryContent('/ucinkujici').where({ slug: slug }).findOne();
-    console.log(data);
 }
 catch (error) {
     console.log(error);
 }
 
 function openLightbox(index) {
-    console.log('open lightbox called!');
     lightboxIndex.value = index;
-    console.log(lightboxIndex);
     lightboxVisible.value = true;
-    console.log(lightboxVisible);
 }
 function closeLightbox() {
     lightboxIndex.value = 0;
