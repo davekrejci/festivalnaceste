@@ -37,8 +37,8 @@
               <div class="absolute z-10 pointer-events-none w-full h-full">
                 <p class="text-white text-xs font-semibold uppercase mb-1">{{event.type}}</p>
                 <h2 class="text-white font-bold text-md">{{ event.name }}</h2>
-                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ event.time }}</p>
-                <p class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="tdesign:location"></Icon> {{ event.location }}</p>
+                <div class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ event.time }}</div>
+                <div class="text-white text-sm mt-1"><Icon size="16" class="mr-1 my-0" name="tdesign:location"></Icon> {{ event.location }}</div>
               </div>
             </NuxtLink>
             <div v-for="(hour,index) in day.hours" :key="index" class="hour border-t border-dashed border-neutral-700"></div>
