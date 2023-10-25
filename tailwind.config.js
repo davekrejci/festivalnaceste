@@ -2,7 +2,11 @@ module.exports = {
   //...
   plugins: [
     require('@tailwindcss/line-clamp'),
-    require("daisyui")
+    require("daisyui"),
+    require('flowbite/plugin')
+  ],
+  content: [
+    "./node_modules/flowbite/**/*.{js,ts}"
   ],
   theme: {
     extend: {

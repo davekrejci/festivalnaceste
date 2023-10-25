@@ -1,12 +1,10 @@
 <template>
-    <h2 class="text-2xl text-base-100 font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight text-center text-white">Hlavní partneři</h2>
-    <div class="mt-12 md:mt-10 flex flex-col md:flex-row flex-wrap justify-center item-center md:space-x-44 space-y-16 md:space-y-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 place-items-center">
-            <div class="max-h-24 max-w-[200px]"><nuxt-img fit="contain"  format="webp" src="/images/logos/logo_dilia.svg" alt="logo-dilia"/></div>
-            <div class="max-h-24 max-w-[200px]"><nuxt-img fit="contain"  format="webp" src="/images/logos/logo_opava.svg" alt="logo-opava"/></div>
-            <div class="max-h-24 max-w-[200px]"><nuxt-img fit="contain"  format="webp" src="/images/logos/logo_slu.png" alt="logo-slu"/></div>
-            <div class="max-h-24 max-w-[200px]"><nuxt-img fit="contain"  format="webp" src="/images/logos/logo_oko.png" alt="logo-oko"/></div>
-        </div>
+    <h2 class="text-xl text-base-100 font-bold leading-7 sm:truncate sm:text-2xl sm:tracking-tight text-center text-white">Hlavní partneři</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+        <div class="max-w-[150px]"><NuxtImg  fit="cover" height="50" format="webp" src="/images/logos/dilia-white.svg" alt="logo-dilia"/></div>
+        <div class="max-w-[150px]"><NuxtImg  fit="cover" height="50" format="webp" src="/images/logos/slu-white.svg" alt="logo-slu"/></div>
+        <div class="max-w-[150px]"><NuxtImg  fit="cover" height="50" format="webp" src="/images/logos/oko-white.svg" alt="logo-oko"/></div>
+        <div class="max-w-[150px]"><NuxtImg  fit="cover" height="50" format="webp" src="/images/logos/logo_opava.svg" alt="logo-opava"/></div>
     </div>
 </template>
     

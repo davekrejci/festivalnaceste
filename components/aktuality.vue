@@ -25,7 +25,7 @@
                                     {{ post.description }}
                                 </p>
                                 <NuxtLink :to="`/aktuality/${post.slug}`">
-                                    <div class="btn btn-primary text-black hover:text-white rounded btn-sm ">
+                                    <div class="btn btn-primary text-black hover:text-white rounded btn-sm shadow-xl">
                                         Přečíst článek
                                     </div>
                                 </NuxtLink>

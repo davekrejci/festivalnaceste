@@ -49,7 +49,7 @@
                     @click.prevent="openLightbox(index)">
                     <nuxt-img :src="image" format="webp" fit="cover" height="300" width="300"
                         class="w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110"
-                        loading="lazy" />
+                        />
                 </div>
                 <div v-for="(video, index) in data.videos" :key="index" class="relative overflow-hidden aspect-square"
                     @click.prevent="openLightbox(index)">

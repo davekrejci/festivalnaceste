@@ -7,6 +7,6 @@
         <main class="flex-1 p-0 m-0">
             <slot />
         </main>
-        <CustomFooter class=""></CustomFooter>
+        <CustomFooter class="mt-32"></CustomFooter>
     </div>
 </template>
