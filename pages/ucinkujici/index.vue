@@ -126,10 +126,19 @@
                     loading="lazy"/>
                 <div class="absolute left-0 bottom-0 p-4 z-10 pointer-events-none">
                     <p class="text-white text-xs font-semibold uppercase mb-1">Vernisáž</p>
-                    <h2 class="text-white font-bold text-2xl">Bod Doteku</h2>
-                    <p class="text-white">Vernisáž s názvem Bod Doteku od Hany Magdoňové</p>
+                    <h2 class="text-white font-bold text-2xl">Bod doteku</h2>
+                    <p class="text-white">Vernisáž a výstava s názvem Bod doteku od Hany Magdoňové</p>
                 </div>
-            </NuxtLink> 
+            </NuxtLink>
+            <NuxtLink to="/ucinkujici/bednarova" class="tile overflow-hidden relative h-60 lg:col-start-2 lg:col-span-1 lg:row-start-7 lg:row-span-2 border-2 border-black bg-yellow-400">
+                <nuxt-img src="/images/artists/bednarova.jpg" format="webp" fit="cover" class="tile overflow-hidden-bg-image absolute left-0 top-0 w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110 hover:brightness-50"
+                    loading="lazy"/>
+                <div class="absolute left-0 bottom-0 p-4 z-10 pointer-events-none">
+                    <p class="text-white text-xs font-semibold uppercase mb-1">Výstava</p>
+                    <h2 class="text-white font-bold text-2xl">Marie Bednářová</h2>
+                    <p class="text-white">Výstava kombinující sochu a malbu s výrazným světelným designem a atmosférickou hudbou</p>
+                </div>
+            </NuxtLink>
             <!-- <NuxtLink to="/ucinkujici/slampoetry" class="tile overflow-hidden relative h-60 lg:col-start-2 lg:col-span-1 lg:row-start-7 lg:row-span-2 border-2 border-black bg-indigo-400">
                 <nuxt-img src="/images/artists/slampoetry.jpg" format="webp" fit="cover" class="tile overflow-hidden-bg-image absolute left-0 top-0 w-full cursor-pointer h-full object-cover transition duration-500 transform hover:scale-110 hover:brightness-50"
                     loading="lazy"/>

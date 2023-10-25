@@ -2,10 +2,11 @@
 title: 'Bod Doteku'
 type: 'Vernisáž'
 description: 'Vernisáž a výstava s názvem Bod doteku od Hany Magdoňové.'
+offprogram: true
 location: 'Hauerova 4'
 locationLink: 'https://maps.app.goo.gl/XYi2puccEHMy7WdF6'
 date: 'Středa 1. 11. 2023'
-time: '17:00 - 17:30'
+time: '16:30'
 cover: '/images/artists/bod-doteku.jpg'
 info: '
 <p>Po absolvování Kulturní dramaturgie se zaměřením na divadlo na Slezské univerzitě se umělecké vyjádření autorky začalo ubírat od divadla směrem k performanci.</p>

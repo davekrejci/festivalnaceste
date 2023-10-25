@@ -21,6 +21,10 @@
         </section>
         <!-- Description section -->
         <section class="p-8 py-8 bg-base-300 xl:max-w-7xl mx-auto">
+            <div v-if="data.offprogram" class="-mt-3">
+                <span class="badge badge-sm badge-neutral text-neutral-200 -ml-1 rounded-md mb-1 text-md font-semibold">Off program</span>
+                <span class="text-neutral-400 text-sm mb-4 block">Tento účinkující není součástí hlavního programu a může se krýt s dalšími účinkujícími!</span>
+            </div>
             <div class="mb-8 p-4 card bg-[#341819] rounded-sm shadow-xl">
                 <span class="m-0 p-0 mb-2 text-white text-lg font-bold block">{{ data.date }}</span>
                 <span class="m-0 p-0 mb-0 text-white block"><Icon size="16" class="mr-1 my-0" name="mingcute:time-line"></Icon> {{ data.time }}</span>

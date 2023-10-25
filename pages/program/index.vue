@@ -59,6 +59,15 @@ const days = [
     hours: [17,18,19,20,21],
     events: [
       {
+        name: 'Zahájení festivalu',
+        type: 'Zahájení',
+        time: '17:00 - 17:30',
+        location: 'Klub Art (Obecní dům)',
+        link: '',
+        startPosition: calculateTopPixels("17:00", 17),
+        duration: 30
+      },
+      {
         name: 'Aneska & Band',
         type: 'Koncert',
         time: '17:30 - 18:15',
@@ -108,15 +117,6 @@ const days = [
         link: '/ucinkujici/teller-workshop',
         startPosition: calculateTopPixels("15:00", 15),
         duration: 120
-      },
-      {
-        name: 'Bod Doteku',
-        type: 'Vernisáž',
-        time: '17:00 - 17:30',
-        location: 'Hauerova 4',
-        link: '/ucinkujici/bod-doteku',
-        startPosition: calculateTopPixels("17:00", 15),
-        duration: 30
       },
       {
         name: 'V pasti',
