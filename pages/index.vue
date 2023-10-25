@@ -25,7 +25,7 @@
           <hr class="mb-4 -mt-10 lg:-mt-16 lg:mb-8 border-2 border-amber-100">
           <h2 class="text-2xl font-bold tracking-tighter">31. 10. – 2. 11. 2023</h2>
           <h2 class="text-2xl font-bold">Opava</h2>
-          <NuxtLink to="/program" class="btn btn-primary border-none shadow-xl btn-sm lg:btn-md rounded mt-8">Program festivalu</NuxtLink>
+          <NuxtLink to="/program" class="btn btn-primary border-none shadow-xl btn-md rounded mt-8 hover:text-white">Program festivalu</NuxtLink>
         </div>
       </div>
     </div>
