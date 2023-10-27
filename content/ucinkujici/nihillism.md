@@ -1,7 +1,7 @@
 ---
 title: 'Nihillism'
 type: 'Koncert'
-description: 'Techno hudba, ovlivněna prvky funky, old school, hip-hopu, breakbeatu až po Y2Kcore'
+description: 'Halloweenská párty s oldies hudbou.'
 location: 'Hauerova 4'
 locationLink: 'https://maps.app.goo.gl/XYi2puccEHMy7WdF6'
 date: 'Čtvrtek 2. 11. 2023'

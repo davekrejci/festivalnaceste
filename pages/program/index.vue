@@ -170,8 +170,8 @@ const days = [
         duration: 90
       },
       {
-        name: 'Halloweenské překvapení',
-        type: 'Tajemství',
+        name: 'Halloweenské slam poetry a dlabání dýní',
+        type: 'Slam poetry',
         time: '17:00 - 19:00',
         location: 'Hauerova 4',
         startPosition: calculateTopPixels("17:00", 15),

@@ -118,7 +118,7 @@
                 <div class="absolute left-0 bottom-0 p-4 z-10 pointer-events-none">
                     <p class="text-white text-xs font-semibold uppercase mb-1">Koncert</p>
                     <h2 class="text-white font-bold text-2xl">Nihillism</h2>
-                    <p class="text-white">Techno hudba, ovlivněna prvky funky, old school, hip-hopu, breakbeatu až po Y2Kcore</p>
+                    <p class="text-white">Halloweenská párty s oldies hudbou.</p>
                 </div>
             </NuxtLink>
             <NuxtLink to="/ucinkujici/bod-doteku" class="tile overflow-hidden relative h-60 lg:col-start-1 lg:col-span-1 lg:row-start-7 lg:row-span-2 border-2 border-black bg-indigo-400">
