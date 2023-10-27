@@ -18,6 +18,11 @@ info: '
 '
 links: [
     {
+        url: 'https://www.facebook.com/events/s/hana-magdonova-bod-doteku/841407814352498/',
+        icon: 'fa6-brands:facebook-f',
+        text: 'Facebook'
+    },
+    {
         url: 'https://hanamagdonova.wordpress.com/',
         icon: 'mdi:web',
         text: 'Web'
