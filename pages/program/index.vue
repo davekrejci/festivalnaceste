@@ -188,6 +188,7 @@ const days = [
       },
       {
         name: 'Fredy & Krasty',
+        type: 'Koncert',
         time: '22:00 - 23:00',
         location: 'Hauerova 4',
         link: '/ucinkujici/fredy-krasty',
@@ -196,6 +197,7 @@ const days = [
       },
       {
         name: 'Nihillism',
+        type: 'Koncert',
         time: '23:00 - 24:00',
         location: 'Hauerova 4',
         link: '/ucinkujici/nihillism',
