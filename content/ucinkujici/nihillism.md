@@ -5,7 +5,7 @@ description: 'Halloweenská párty s oldies hudbou.'
 location: 'Hauerova 4'
 locationLink: 'https://maps.app.goo.gl/XYi2puccEHMy7WdF6'
 date: 'Čtvrtek 2. 11. 2023'
-time: '23:00 - 24:00'
+time: '23:00 - 1:00'
 cover: '/images/artists/nihillism.jpg'
 info: '
 <p>Nihillism  se do světa DJingu dostal už ve svých 14 letech. Už tehdy si poprvé stáhl Virtual DJ a začal se učit. Nyní mu je 22 let a snaží se předvádět, co umí.
