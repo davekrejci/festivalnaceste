@@ -144,7 +144,7 @@ const menuItems = [
   { link: "/aktuality", text: "Aktuality" },
   { link: "/program", text: "Program" },
   { link: "/ucinkujici", text: "Účinkující" },
-  { link: "/galerie/2022", text: "Galerie" },
+  { link: "/galerie/2023", text: "Galerie" },
   {
     link: "#", text: "Info", children:
       [

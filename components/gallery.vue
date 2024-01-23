@@ -52,7 +52,7 @@ export default {
     props: {
         year: {
             type: String,
-            default: '2022',
+            default: '2023',
         }
     },
     data() {
@@ -60,7 +60,7 @@ export default {
             images: [],
             lightboxIndex: 0,
             lightboxVisible: false,
-            years: ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2021 Léto', '2021 Podzim', '2022']
+            years: ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2021 Léto', '2021 Podzim', '2022', '2023']
 
         }
     },
@@ -86,9 +86,10 @@ export default {
                 case "2017": images = import.meta.glob("/public/images/gallery/2017/*.{jpg,JPG,jpeg,png,gif}"); break;
                 case "2018": images = import.meta.glob("/public/images/gallery/2018/*.{jpg,JPG,jpeg,png,gif}"); break;
                 case "2019": images = import.meta.glob("/public/images/gallery/2019/*.{jpg,JPG,jpeg,png,gif}"); break;
-                case "2021 Léto": images = import.meta.glob("/public/images/gallery/2021 léto/*.{jpg,jpeg,png,gif}"); break;
-                case "2021 Podzim": images = import.meta.glob("/public/images/gallery/2021 podzim/*.{jpg,jpeg,png,gif}"); break;
-                case "2022": images = import.meta.glob("/public/images/gallery/2022/*.{jpg,jpeg,png,gif}"); break;
+                case "2021 Léto": images = import.meta.glob("/public/images/gallery/2021 léto/*.{jpg,JPG,jpeg,png,gif}"); break;
+                case "2021 Podzim": images = import.meta.glob("/public/images/gallery/2021 podzim/*.{jpg,JPG,jpeg,png,gif}"); break;
+                case "2022": images = import.meta.glob("/public/images/gallery/2022/*.{jpg,JPG,jpeg,png,gif}"); break;
+                case "2023": images = import.meta.glob("/public/images/gallery/2023/*.{jpg,JPG,jpeg,png,gif}"); break;
             }
             const imageFilenames = Object.keys(images).map(filename => {
                 return filename.replace(/^\/public\//, '/');
